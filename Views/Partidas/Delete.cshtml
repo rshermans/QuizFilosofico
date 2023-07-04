@@ -1,0 +1,45 @@
+﻿@model QuizFilosofico.Models.Partida
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Apagar</h1>
+
+<h3>Você está certo que quer apagar isto?</h3>
+<div>
+    <h4>Partida</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Data)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Data)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Pontuacao)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Pontuacao)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Jogador)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Jogador.Email)
+        </dd>
+        <dt class = "col-sm-2">
+            Tema @*@Html.DisplayNameFor(model => model.Quizz)*@
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Quizz.Tema)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Apagar" class="btn btn-danger" /> |
+        <a asp-action="Index">Voltar a Lista de Partidas</a>
+    </form>
+</div>

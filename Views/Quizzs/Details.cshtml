@@ -1,0 +1,39 @@
+﻿@model QuizFilosofico.Models.Quizz
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Detalhes</h1>
+
+<div>
+    <h4>Quizz</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Descricao)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Descricao)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Tema)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Tema)
+        </dd>
+        <dt class = "col-sm-2">
+            Caminho da Imagem @*@Html.DisplayNameFor(model => model.ImgCaminho)*@
+        </dt>
+        <dd class = "col-sm-10">
+           @Html.DisplayFor(model => model.ImgCaminho)
+        </dd>
+    </dl>
+</div>
+<div>
+    <button type="button" class="btn btn-outline-success" data-bs-toggle="popover" title="Inicio" data-bs-content="Algumas-Edições">
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Editar</a>
+    </button>
+    |
+    <a asp-action="Index">Voltar a Lista de Quizz</a>
+</div>

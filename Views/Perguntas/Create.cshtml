@@ -1,0 +1,45 @@
+﻿@model QuizFilosofico.Models.Pergunta
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Cadastro de Perguntas</h1>
+
+<h4>Pergunta: </h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Enunciado" class="control-label"></label>
+                <input asp-for="Enunciado" class="form-control" />
+                <span asp-validation-for="Enunciado" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nivel" class="control-label"></label>
+                <input asp-for="Nivel" class="form-control" />
+                <span asp-validation-for="Nivel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="QuizzId" class="control-label">Tema</label>
+                <select asp-for="QuizzId" class="form-control" asp-items="ViewBag.QuizzId">
+                    <option value="">-- Selecione um Tema --</option>
+                </select>
+            </div>
+            <br/>
+            <div class="form-group">
+                <input type="submit" value="Cadastro" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Voltar a Lista de Perguntas</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

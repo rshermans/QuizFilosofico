@@ -1,0 +1,43 @@
+﻿@model QuizFilosofico.Models.Partida
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Detalhes</h1>
+
+<div>
+    <h4>Partida</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Data)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Data)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Pontuacao)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Pontuacao)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Jogador)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Jogador.Email)
+        </dd>
+        <dt class = "col-sm-2"> 
+           Tema @*@Html.DisplayNameFor(model => model.Quizz)*@
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Quizz.Tema)
+        </dd>
+    </dl>
+</div>
+<div>
+    <button type="button" class="btn btn-outline-success" data-bs-toggle="popover" title="Inicio" data-bs-content="Edições">
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Editar</a> </button> |
+    <a asp-action="Index">Voltar a Lista de Partidas</a>
+</div>

@@ -1,0 +1,189 @@
+﻿@using QuizFilosofico.Models
+@using QuizFilosofico.Models.Extensions
+@using System.Linq;
+
+<style>
+    .form-check {
+        margin-bottom: 1rem;
+    }
+
+    .form-check-input {
+        position: relative;
+        margin-top: 0.3rem;
+        margin-right: 0.5rem;
+        margin-left: 0;
+        width: 1.2rem;
+        height: 1.2rem;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+
+    .form-check-label {
+        display: inline-block;
+        margin-bottom: 0;
+        cursor: pointer;
+        text-align: left;
+    }
+
+    .itens-span{
+        display: block;
+        text-align: left;
+        text-justify: auto;
+    }
+
+.relogio-container {
+  position: fixed;
+  top: 100px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: white;
+  background-color: #888;
+  padding: 10px;
+  border-radius: 15px;
+        width: 25%;
+        height: 3vw;
+}
+
+.relogio-label {
+  margin-right: 5px;
+}
+
+.relogio {
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.relogio-unidade {
+  font-size: 14px;
+}
+
+/* Estilos adicionais */
+.relogio-container {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.relogio {
+  color: green;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+#relogio.amarelo {
+    color: orange;
+}
+
+#relogio.vermelho {
+    color: red;
+}
+
+</style>
+<script>
+    function iniciarContagemRegressiva() {
+        var tempoLimite = 180; // Tempo limite em segundos (3 minutos)
+        var relogioElemento = document.getElementById("relogio");
+        var intervalo = setInterval(contarTempo, 1000); // Chama a função contarTempo a cada segundo
+
+        function contarTempo() {
+            var minutos = Math.floor(tempoLimite / 60);
+            var segundos = tempoLimite % 60;
+
+            var tempoFormatado = `${padZero(minutos)}:${padZero(segundos)}`;
+            relogioElemento.textContent = tempoFormatado;
+
+            if (tempoLimite === 60) {
+                relogioElemento.classList.add("amarelo");
+            } else if (tempoLimite === 30) {
+                relogioElemento.classList.remove("amarelo");
+                relogioElemento.classList.add("vermelho");
+            }
+
+            tempoLimite--;
+
+            if (tempoLimite < 0) {
+                clearInterval(intervalo);
+                alert("Tempo esgotado! Seu tempo acabou.");
+                window.location.href = "/Quiz/Quizz"; // Redireciona para a página inicial do quiz
+            }
+        }
+
+        function padZero(numero) {
+            return numero.toString().padStart(2, "0");
+        }
+    }
+
+                window.onload = function () {
+                iniciarContagemRegressiva();
+          
+    }
+   
+
+</script>
+
+
+
+
+@{ if (ViewBag.Erro != null)
+    {
+    <div class="alert alert-warning" role="alert">
+    <h5>@ViewBag.Erro</h5>
+    </div>
+    }
+    else
+    {
+        <div class="relogio-container fixed-top">
+            <span class="relogio-label">Tempo restante:</span>
+            <label id="relogio" class="relogio">03:00</label>
+            <span class="relogio-unidade">minutos</span>
+        </div>
+    }
+}
+
+
+
+
+
+<br/>
+<form asp-action="Resultado" method="post">
+
+    @foreach (var pergunta in ViewBag.PerguntaX)
+    {
+        <div class="card mb-4">
+            <div class="card-body">
+                <h6 class="card-title">Pergunta @pergunta.Id</h6>
+                <h5 class="card-text">@pergunta.Enunciado</h5>
+                <hr class="w3-clear">
+                @{
+                    // Cria um objeto Random para gerar números aleatórios
+                    Random random = new Random();
+                }
+                @foreach (var item in ViewBag.ItemDaPergunta)
+                {
+                    if (item.PerguntaId == pergunta.Id)
+                    {
+                        <div class="form-check">
+                            <span class="itens-span"> <input class="form-check-input" type="radio" id="@($"{pergunta.Id}.{item.Id}")" name="@pergunta.Id" value="@item.Id">@item.Item</span>
+                        </div>
+                        <br>
+                    }
+                }
+            </div>
+        </div>
+    }
+  
+  @if (ViewBag.Erro == null)
+{ 
+        <input type="hidden" name="QuizzId" value="@ViewBag.QuizzId">
+            <button type="submit" class="btn btn-primary">Enviar Respostas</button>
+} 
+
+    <button type="button" class="btn btn-outline-dark" data-bs-toggle="popover" title="Inicio" data-bs-content="Voltar">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Quiz" asp-action="Quizz">Voltar</a>
+    </button>
+</form>
+
+   
+    
+

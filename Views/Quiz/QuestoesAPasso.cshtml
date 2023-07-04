@@ -1,0 +1,32 @@
+﻿@using QuizFilosofico.Models
+
+@{
+    var random = new Random();
+    var perguntaIndex = random.Next(ViewBag.COMPERGUNTAS.Count);
+    var pergunta = ViewBag.COMPERGUNTAS[perguntaIndex];
+    var itens = ((List<ItemDaPergunta>)ViewBag.COMITENS).Where(i => i.PerguntaId == pergunta.Id).OrderBy(_ => random.Next()).ToList();
+}
+
+
+<h3>Questões</h3>
+
+
+
+
+<form asp-action="TestResultado" method="post">
+
+    <h3>@pergunta.Enunciado</h3>
+
+    @foreach (var item in itens)
+    {
+        <div>
+            <input type="radio" id="@item.Id" name="resposta" value="@item.Id">
+            <label for="@item.Id">@item.Item</label>
+        </div>
+    }
+
+    <div class="icon-boxes position-relative">
+        <button type="submit" class="btn btn-primary">Enviar Respostas</button>
+    </div>
+
+</form>

@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Jogo de Completar Palavras";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Jogo de Completar Palavras</h1>
+
+<p>Complete a palavra abaixo:</p>
+
+<p>
+    @if (ViewBag.Palavra != null)
+    {
+        foreach (var item in ViewBag.Palavra)
+        {
+            @item; <br />
+        }
+        //@ViewBag.Palavra
+    }  </p>
+
+<form method="post">
+    <label>Palavra:</label>
+    <input type="text" name="resposta" />
+    <button type="submit">Verificar</button>
+</form>
+
+@if (ViewBag.RespostaCorreta != null)
+{
+    if ((bool)ViewBag.RespostaCorreta)
+    {
+        <p class="text-success">Resposta correta!</p>
+    }
+    else
+    {
+        <p class="text-danger">Resposta incorreta. Tente novamente!</p>
+    }
+}
+

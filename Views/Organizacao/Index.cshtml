@@ -1,0 +1,127 @@
+﻿@{
+    ViewBag.Title = "Organização - Quiz Filosófico";
+}
+<style>
+    .texto {
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+    .container{
+        padding: 0 0 0 0;
+        margin-top: 20px;
+    }
+</style>
+<div class="navbar-right">
+    <button type="button" class="btn btn-outline-dark" data-bs-toggle="popover" title="Inicio" data-bs-content="Algumas Edições">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Voltar</a>
+    </button>
+</div>
+<div class="container">
+    
+    <div class="header">
+        <h1>Organização</h1>
+        <h2>Quiz Filosófico</h2>
+    </div>
+    <div class="content">
+        <h2>Refletindo sobre o Quiz Filosófico</h2>
+        <p class="texto">
+            Organização é uma palavra que pode ser vista como simplesmente um processo de colocar coisas em ordem. No entanto, a filosofia nos mostra que a organização pode ter um significado mais profundo. </p>
+        <p class="texto">
+            Os filósofos antigos acreditavam que a organização do pensamento era essencial para o desenvolvimento da sabedoria e do conhecimento. Aristóteles, por exemplo, acreditava que a organização do
+            conhecimento era fundamental para a compreensão do mundo e para a tomada de decisões éticas e morais.</p>
+    </div>
+</div>
+
+<div class="icon-boxes position-relative">
+    <div class="container position-relative">
+        <div class="row gy-1 mt-2">
+            <span class="badge bg-warning"><a class="nav-link text-dark" asp-area="" asp-controller="Jogadores" asp-action="Index" style="font-size: 16px;">Jogador</a></span>
+        </div>
+    </div><!--End Icon Box -->
+
+    <div class="container position-relative">
+        <div class="row gy-1 mt-2">
+
+            <span class="badge bg-warning"><a class="nav-link text-dark" asp-area="" asp-controller="Perguntas" asp-action="Index" style="font-size: 16px;">Pergunta</a></span>
+
+        </div>
+    </div><!--End Icon Box -->
+
+    <div class="container position-relative">
+        <div class="row gy-1 mt-2">
+
+            <span class="badge bg-warning"><a class="nav-link text-dark" asp-area="" asp-controller="ItemDaPerguntas" asp-action="Index" style="font-size: 16px;">Itens das Perguntas</a></span>
+
+        </div>
+    </div><!--End Icon Box -->
+
+    <div class="container position-relative">
+        <div class="row gy-1 mt-2">
+
+            <span class="badge bg-warning"><a class="nav-link text-dark" asp-area="" asp-controller="Partidas" asp-action="Index" style="font-size: 16px;">Partida</a></span>
+
+        </div>
+    </div><!--End Icon Box -->
+
+    <div class="container position-relative">
+        <div class="row gy-1 mt-2">
+
+            <span class="badge bg-warning"><a class="nav-link text-dark" asp-area="" asp-controller="Quizzs" asp-action="Index" style="font-size: 16px;">Quiz</a></span>
+
+        </div>
+    </div><!--End Icon Box -->
+
+</div>
+
+
+@*@{
+    ViewBag.Title = "Organização - Quiz Filosófico";
+}
+
+<h1>Organização</h1>
+<h2>Quiz Filosófico</h2>
+
+
+<div class="icon-boxes position-relative">
+    <div class="container position-relative">
+        <div class="row gy-4 mt-5">
+
+            <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon-box">
+                    <div class="icon"><i class="bi bi-person"></i></div>
+                    <h4 class="title"><a href="@Url.Action("Index", "Jogadores")" class="stretched-link">Jogador</a></h4>
+                </div>
+            </div><!--End Icon Box -->
+
+            <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon-box">
+                    <div class="icon"><i class="bi bi-question"></i></div>
+                    <h4 class="title"><a href="@Url.Action("Index", "Perguntas")" class="stretched-link">Pergunta</a></h4>
+                </div>
+            </div><!--End Icon Box -->
+
+            <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box">
+                    <div class="icon"><i class="bi bi-chat-right-dots"></i></div>
+                    <h4 class="title"><a href="@Url.Action("Index", "ItemDaPerguntas")" class="stretched-link">Resposta</a></h4>
+                </div>
+            </div><!--End Icon Box -->
+
+            <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <div class="icon-box">
+                    <div class="icon"><i class="bi bi-trophy"></i></div>
+                    <h4 class="title"><a href="@Url.Action("Index", "Partidas")" class="stretched-link">Partida</a></h4>
+                </div>
+            </div><!--End Icon Box -->
+
+            <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <div class="icon-box">
+                    <div class="icon"><i class="bi bi-joystick"></i></div>
+                    <h4 class="title"><a href="@Url.Action("Index", "Quizzs")" class="stretched-link">Jogada</a></h4>
+                </div>
+            </div><!--End Icon Box -->
+
+        </div>
+    </div>
+</div>*@

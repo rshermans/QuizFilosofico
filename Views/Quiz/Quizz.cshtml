@@ -1,0 +1,331 @@
+﻿<style>
+    .bodycard {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .description {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: 200px; /* Defina o valor desejado para a largura máxima */
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: 715px;
+        grid-template-rows: 210px 210px 50px;
+        grid-template-areas: "image" "text" "stats";
+        border-radius: 18px;
+        background: white;
+        box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: center;
+        transition: 0.5s ease;
+        cursor: pointer;
+        margin: 30px;
+    }
+
+    .card-manager {
+        background: black;
+        color: white;
+    }
+
+    .card-image {
+        grid-area: image;
+        background: url("img1.jpg");
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        background-size: cover;
+    }
+
+    .card-text {
+        grid-area: text;
+        margin: 25px;
+    }
+
+        .card-text .date {
+            color: rgb(255, 7, 110);
+            font-size: 11px;
+        }
+
+        .card-text p {
+            color: saddlebrown;
+            font-size: 16px;
+            font-weight: bold; /* Adiciona negrito */
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); /* Adiciona sombra clara */
+        }
+
+        .card-text h2 {
+            margin-top: 0px;
+            font-size: 18px;
+        }
+
+    .card-stats {
+        grid-area: stats;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background: rgb(255, 7, 110);
+    }
+
+        .card-stats .stat {
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+        }
+
+        .card-stats .border {
+            border-left: 1px solid rgb(172, 26, 87);
+            border-right: 1px solid rgb(172, 26, 87);
+        }
+
+        .card-stats .value {
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+            .card-stats .value sup {
+                font-size: 8px;
+            }
+
+        .card-stats .type {
+            font-size: 13px;
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+
+    .card:hover {
+        transform: scale(1.15);
+        box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+    }
+
+    /*card2*/
+    .card-image.card2 {
+        background: url("img2.jpg");
+        background-size: cover;
+    }
+
+    .card-text.card2 .date {
+        color: rgb(255, 77, 7);
+    }
+
+    .card-stats.card2 .border {
+        border-left: 1px solid rgb(185, 67, 20);
+        border-right: 1px solid rgb(185, 67, 20);
+    }
+
+    .card-stats.card2 {
+        background: rgb(255, 77, 7);
+    }
+    /*card3*/
+    .card-image.card3 {
+        background: url("img3.jpg");
+        background-size: cover;
+    }
+
+    .card-text.card3 .date {
+        color: rgb(0, 189, 63);
+    }
+
+    .card-stats.card3 .border {
+        border-left: 1px solid rgb(14, 122, 50);
+        border-right: 1px solid rgb(14, 122, 50);
+    }
+
+    .card-stats.card3 {
+        background: rgb(0, 189, 63);
+    }
+
+    .card-text.align-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+
+</style>
+
+<script>
+   function submitForm() {
+            // Obtém o formulário pelo ID ou por outros meios
+            var form = document.getElementById('meuFormulario');
+            document.getElementById("tema").onchange = function () {
+                var selectedValue = this.value;
+                console.log("Valor selecionado do tema: " + selectedValue);
+                document.getElementById("nivel").onchange = function () {
+                    // Código a ser executado quando o valor do select for alterado
+                    var selectedValue = this.value;
+                    console.log("Valor selecionado: " + selectedValue);
+                // Submete o formulário
+                form.submit();
+            }
+</script>
+
+@using QuizFilosofico.Models
+
+<h1>QUIZ FILOSÓFICO</h1>
+
+<h4>Iniciar</h4>
+<hr />
+<form asp-action="Questoes">
+    <div class="icon-boxes position-relative">
+        <div class="row">
+            <div class="col-md-6">
+
+                <select name="tema" id="tema" class="form-control">
+                    <option value="">Selecione o Tema do seu Quizz</option>
+                    @foreach (var item in ViewBag.TEMA)
+                    {
+                        <option value="@item.Value">@item.Text</option>
+                                      
+                    }
+                </select>
+              @* @Html.DropDownList("tema", (SelectList)ViewBag.X, "Select o Tema do seu Quizz")*@
+           
+            </div>
+        </div>
+    </div>
+    <br/>
+
+    <div class="icon-boxes position-relative">
+        <div class="row">
+            <div class="col-md-6">
+                <select name="nivel" id="nivel" class="form-control">
+                    <option value="">Selecione o Nível do seu Quizz</option>
+                    @foreach (var item in ViewBag.Y)
+                    {
+
+                        if (item.Text == "1")
+                        {
+                            <option value="@item.Text">Fácil</option>
+                        }
+                        else if (item.Text == "2")
+                        {
+                            if (ViewBag.Pontuacao >= 3) // Acesso ao nível médio requer pontuação mínima de 3 pontos
+                            {
+                                <option value="@item.Text">Médio</option>
+                            }
+                        }
+                        else if (item.Text == "3")
+                        {
+                            if (ViewBag.Pontuacao >= 6) // Acesso ao nível difícil requer pontuação mínima de 6 pontos
+                            {
+                                <option value="@item.Text">Difícil</option>
+                            }
+                        }
+                        else
+                        {
+                            <option value="@item.Text">@item.Text</option>
+                        }
+                        
+                    }
+                </select>
+               
+            </div>
+        </div>
+    </div>
+    <div class="container position-relative">
+        <button id="idSubmit" type="submit" class="btn btn-primary btn-lg">OK
+        </button>
+    </div>
+                </form>
+    <hr />
+    <hr />
+
+  @foreach (var quiz in ViewBag.QUIZ)
+        {
+    <div class="icon-boxes position-relative" >
+
+  
+
+  
+            
+            <div class="card" >
+               
+                    <div class="card-image card1">
+                        <img src="../@quiz.ImgCaminho" width="715px" height="421px" style="opacity: 0.50;" class="small material-icons">
+                    </div>
+                    <div class="card-text card1 align-bottom" >
+                        <span class="date"></span>
+                        <h2>@quiz.Tema</h2>
+                        <p>@quiz.Descricao</p>
+                    </div>
+            <form asp-action="Questoes">
+                <div class="card-stats card1" onclick="enviarDados();">
+                        <div class="stat">
+                            <div class="value">
+                                <select name="nivel" id="nivel" class="form-control" onchange="this.form.submit();">
+                                    <option value="">Selecione o Nível do seu Quizz</option>
+
+                                    <option value="1">Fácil</option>
+                                    @if (ViewBag.Pontuacao >= 3) // Acesso ao nível médio requer pontuação mínima de 3 pontos
+                                    {
+                                        <option value="2">Médio</option>
+                                    }
+
+                                    @if (ViewBag.Pontuacao >= 6) // Acesso ao nível difícil requer pontuação mínima de 6 pontos
+                                    {
+                                        <option value="3">Difícil</option>
+                                    }
+                                    <!-- Para que o Valor do Nivel seja enviado corretamente -->
+                                </select>
+                            <input type="hidden" name="tema" value="@quiz.Id">
+                            </div>
+                        </div>
+                </div>
+                <button id="@quiz.Id" type="submit" hidden class="btn btn-primary btn-lg"></button>
+            </form>
+                </div>
+      
+    </div>
+        }
+        
+   
+
+
+
+
+<hr />
+<hr />
+
+@{
+    //Este ViewBag.Estado será implementado para verificar se o jogador selecionou o Tema e o Nivel.
+}
+@if (ViewBag.Erro == null)
+{
+    <h3>@ViewBag.Erro</h3> 
+}
+
+<script>
+    function enviarDados() {
+        // Obter os valores selecionados do tema e do nível
+        const temaSelecionado = document.getElementById('tema').value;
+        const nivelSelecionado = document.getElementById('nivel').value;
+
+        // Enviar os dados para o servidor
+        fetch('/Quiz/EnviarDados', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ tema: temaSelecionado, nivel: nivelSelecionado })
+        })
+            .then(response => {
+                // Tratar a resposta do servidor, se necessário
+            })
+            .catch(error => {
+                // Tratar erros, se houver
+            });
+    }
+</script>
+
+

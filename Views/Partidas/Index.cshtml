@@ -1,0 +1,91 @@
+﻿@model IEnumerable<QuizFilosofico.Models.Partida>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Lista de Partidas</h1>
+
+<p>
+    <a asp-action="Create">Registar Partida</a>
+</p>
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    <form asp-action="Index">
+                        @* <label>Perguntas :</label>*@
+                        @Html.DropDownList("Jogadorselecionado", (SelectList)ViewBag.JOGADORES, "Selecione o Jogador",new { onchange = "this.form.submit();"})
+                    </form>
+                </th>
+
+            </tr>
+        </thead>
+
+    </table>
+
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Data)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Pontuacao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Jogador)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quizz.Tema)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Data)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Pontuacao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Jogador.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quizz.Tema)
+            </td>
+                <td>
+                    <div class="navbar-right">
+                        <button type="button" class="btn btn-outline-success" data-bs-toggle="popover" title="Inicio" data-bs-content="Algumas-Edições">
+                            <a asp-action="Edit" asp-route-id="@item.Id">Editar</a>
+                        </button>
+                    </div>
+                </td>
+                <td>
+                    <div class="navbar-right">
+                        <button type="button" class="btn btn-outline-warning" data-bs-toggle="popover" title="Inicio" data-bs-content="Detalhes">
+                            <a asp-action="Details" asp-route-id="@item.Id">Detalhes</a>
+                        </button>
+                    </div>
+                </td>
+                <td>
+                    <div class="navbar-right">
+                        <button type="button" class="btn btn-outline-danger" data-bs-toggle="popover" title="Inicio" data-bs-content="Deletar">
+                            <a asp-action="Delete" asp-route-id="@item.Id">Apagar</a>
+                        </button>
+                    </div>
+                </td>
+        </tr>
+}
+    </tbody>
+</table>
+<div class="navbar-right">
+    <button type="button" class="btn btn-outline-dark" data-bs-toggle="popover" title="Inicio" data-bs-content="Algumas Edições">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Organizacao" asp-action="Index">Voltar</a>
+    </button>
+</div>

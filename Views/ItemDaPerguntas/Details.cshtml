@@ -1,0 +1,38 @@
+﻿@model QuizFilosofico.Models.ItemDaPergunta
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Detalhes</h1>
+
+<div>
+    <h4>Item da Pergunta</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Item)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Item)
+        </dd>
+        <dt class = "col-sm-2">
+          É correta: @* @Html.DisplayNameFor(model => model.IsCorrect)*@
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IsCorrect)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Pergunta)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Pergunta.Enunciado)
+        </dd>
+    </dl>
+</div>
+<div>
+    <button type="button" class="btn btn-outline-success" data-bs-toggle="popover" title="Inicio" data-bs-content="Edições">
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Editar</a>
+    </button> |
+    <a asp-action="Index">Voltar a Lista de Itens da Pergunta</a>
+</div>

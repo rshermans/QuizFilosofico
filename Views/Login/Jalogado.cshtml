@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Jogador Logado";
+}
+
+<h1 style="font-family: 'Comic Sans MS', sans-serif; color: #333;">Jogador Logado</h1>
+<div>
+<p style="font-family: Arial, sans-serif; color: #666;">O jogador já está logado.</p>
+
+<a href="/Home/Index" style="font-family: Arial, sans-serif; color: #fff; background-color: #00a0e4; padding: 10px 20px; border-radius: 5px; text-decoration: none;">Voltar ao Início</a>
+</div>
+
+<br />
+<button type="button" class="btn btn-warning nav-link text-dark" data-bs-toggle="popover" title="Logout" data-bs-content="Logout">
+    <a class="nav-link text-dark" id="logout-button" asp-area="" asp-controller="Logout" asp-action="Index">Logout</a>
+</button>

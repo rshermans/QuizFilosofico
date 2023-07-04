@@ -1,0 +1,837 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\QuizFilosofico.bundle.scp.css",
+      "PackagePath": "staticwebassets\\QuizFilosofico.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\DiarioDeBordo\\Controle_de_Alterações.txt",
+      "PackagePath": "staticwebassets\\DiarioDeBordo\\Controle_de_Alterações.txt"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\DiarioDeBordo\\Projeto-Quizz-FilosofiaDB-Final.bacpac",
+      "PackagePath": "staticwebassets\\DiarioDeBordo\\Projeto-Quizz-FilosofiaDB-Final.bacpac"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\DiarioDeBordo\\Proposta-50horas.txt",
+      "PackagePath": "staticwebassets\\DiarioDeBordo\\Proposta-50horas.txt"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\DiarioDeBordo\\ScriptQFDB.sql",
+      "PackagePath": "staticwebassets\\DiarioDeBordo\\ScriptQFDB.sql"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Imagens\\01-DesigualdadeCard.jpeg",
+      "PackagePath": "staticwebassets\\Imagens\\01-DesigualdadeCard.jpeg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Imagens\\01-DesigualdadeCard.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\01-DesigualdadeCard.jpg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Imagens\\01-DesigualdadeCard.png",
+      "PackagePath": "staticwebassets\\Imagens\\01-DesigualdadeCard.png"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Imagens\\01-Liberdade.jpeg",
+      "PackagePath": "staticwebassets\\Imagens\\01-Liberdade.jpeg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Imagens\\02-LiberdadeCard.jpeg",
+      "PackagePath": "staticwebassets\\Imagens\\02-LiberdadeCard.jpeg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Imagens\\02-LiberdadeCard.png",
+      "PackagePath": "staticwebassets\\Imagens\\02-LiberdadeCard.png"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Imagens\\02-LivreArbitrio.jpeg",
+      "PackagePath": "staticwebassets\\Imagens\\02-LivreArbitrio.jpeg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Imagens\\03-Desigualdade.jpeg",
+      "PackagePath": "staticwebassets\\Imagens\\03-Desigualdade.jpeg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Imagens\\03-LivreArbitrio.png",
+      "PackagePath": "staticwebassets\\Imagens\\03-LivreArbitrio.png"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Imagens\\03-LivreArbitrioCard.jpeg",
+      "PackagePath": "staticwebassets\\Imagens\\03-LivreArbitrioCard.jpeg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Imagens\\04-Cenário.png",
+      "PackagePath": "staticwebassets\\Imagens\\04-Cenário.png"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Imagens\\04-IdentidadeCard.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\04-IdentidadeCard.jpg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Imagens\\04-IdentidadeCard.png",
+      "PackagePath": "staticwebassets\\Imagens\\04-IdentidadeCard.png"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Imagens\\Cenario4,.png",
+      "PackagePath": "staticwebassets\\Imagens\\Cenario4,.png"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Imagens\\Cenario4-1.png",
+      "PackagePath": "staticwebassets\\Imagens\\Cenario4-1.png"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Imagens\\DD-Quizz.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\DD-Quizz.jpg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Imagens\\DER-quizz-Filosofico.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\DER-quizz-Filosofico.jpg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Imagens\\Imagem-19.25.15.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\Imagem-19.25.15.jpg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Imagens\\OIG-DesigualdadeTT.jfif",
+      "PackagePath": "staticwebassets\\Imagens\\OIG-DesigualdadeTT.jfif"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Imagens\\ReuniaocomPovosOriginarios-1.jpeg",
+      "PackagePath": "staticwebassets\\Imagens\\ReuniaocomPovosOriginarios-1.jpeg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Imagens\\ReuniaocomPovosOriginarios-2.jpeg",
+      "PackagePath": "staticwebassets\\Imagens\\ReuniaocomPovosOriginarios-2.jpeg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Imagens\\Selfie-Mulher-PovosOriginarios.jpeg",
+      "PackagePath": "staticwebassets\\Imagens\\Selfie-Mulher-PovosOriginarios.jpeg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Imagens\\banner-Loggin1.jpeg",
+      "PackagePath": "staticwebassets\\Imagens\\banner-Loggin1.jpeg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Imagens\\modelagemWeb-quizzFilosofico.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\modelagemWeb-quizzFilosofico.jpg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\ConfigADMSesion.JPG",
+      "PackagePath": "staticwebassets\\Outros\\ConfigADMSesion.JPG"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\DER-quizz-Filosofico.drawio",
+      "PackagePath": "staticwebassets\\Outros\\DER-quizz-Filosofico.drawio"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\DER-quizz-Filosofico.jpg",
+      "PackagePath": "staticwebassets\\Outros\\DER-quizz-Filosofico.jpg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\Diversos.txt",
+      "PackagePath": "staticwebassets\\Outros\\Diversos.txt"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\Imagem-19.25.15.jpg",
+      "PackagePath": "staticwebassets\\Outros\\Imagem-19.25.15.jpg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\Lista de Perguntas Quiz.pdf",
+      "PackagePath": "staticwebassets\\Outros\\Lista de Perguntas Quiz.pdf"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\Melhorias-CARDS.txt",
+      "PackagePath": "staticwebassets\\Outros\\Melhorias-CARDS.txt"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\Teste_Com_AI\\AppQuizNoBing.cs",
+      "PackagePath": "staticwebassets\\Outros\\Teste_Com_AI\\AppQuizNoBing.cs"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\Teste_Com_AI\\Dicas_de_Planejamento.txt",
+      "PackagePath": "staticwebassets\\Outros\\Teste_Com_AI\\Dicas_de_Planejamento.txt"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\Teste_Com_AI\\Imagens\\20220326_125904 (1).jpg",
+      "PackagePath": "staticwebassets\\Outros\\Teste_Com_AI\\Imagens\\20220326_125904 (1).jpg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\Teste_Com_AI\\Imagens\\20220326_125904 (1).png",
+      "PackagePath": "staticwebassets\\Outros\\Teste_Com_AI\\Imagens\\20220326_125904 (1).png"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\Teste_Com_AI\\Imagens\\20220326_125904.jpg",
+      "PackagePath": "staticwebassets\\Outros\\Teste_Com_AI\\Imagens\\20220326_125904.jpg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\Teste_Com_AI\\Imagens\\20220326_125904.png",
+      "PackagePath": "staticwebassets\\Outros\\Teste_Com_AI\\Imagens\\20220326_125904.png"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\Teste_Com_AI\\Imagens\\20220326_125904_photos_v2_x4_colored_toned_light_ai.jpg",
+      "PackagePath": "staticwebassets\\Outros\\Teste_Com_AI\\Imagens\\20220326_125904_photos_v2_x4_colored_toned_light_ai.jpg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\Teste_Com_AI\\Imagens\\Banner\\banner1.jpeg",
+      "PackagePath": "staticwebassets\\Outros\\Teste_Com_AI\\Imagens\\Banner\\banner1.jpeg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\Teste_Com_AI\\Imagens\\Banner\\banner2.jpeg",
+      "PackagePath": "staticwebassets\\Outros\\Teste_Com_AI\\Imagens\\Banner\\banner2.jpeg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\Teste_Com_AI\\Imagens\\BestSelo.jpeg",
+      "PackagePath": "staticwebassets\\Outros\\Teste_Com_AI\\Imagens\\BestSelo.jpeg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\Teste_Com_AI\\Imagens\\Easy.jpeg",
+      "PackagePath": "staticwebassets\\Outros\\Teste_Com_AI\\Imagens\\Easy.jpeg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\Teste_Com_AI\\Imagens\\Filosofos-LAerte\\Decartes.jpeg",
+      "PackagePath": "staticwebassets\\Outros\\Teste_Com_AI\\Imagens\\Filosofos-LAerte\\Decartes.jpeg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\Teste_Com_AI\\Imagens\\Filosofos-LAerte\\Kant.jpeg",
+      "PackagePath": "staticwebassets\\Outros\\Teste_Com_AI\\Imagens\\Filosofos-LAerte\\Kant.jpeg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\Teste_Com_AI\\Imagens\\Filosofos-LAerte\\Socrates.jpeg",
+      "PackagePath": "staticwebassets\\Outros\\Teste_Com_AI\\Imagens\\Filosofos-LAerte\\Socrates.jpeg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\Teste_Com_AI\\Imagens\\Filosofos-LAerte\\banner-Loggin.jpeg",
+      "PackagePath": "staticwebassets\\Outros\\Teste_Com_AI\\Imagens\\Filosofos-LAerte\\banner-Loggin.jpeg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\Teste_Com_AI\\Imagens\\Filosofos-LAerte\\banner-Loggin1.jpeg",
+      "PackagePath": "staticwebassets\\Outros\\Teste_Com_AI\\Imagens\\Filosofos-LAerte\\banner-Loggin1.jpeg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\Teste_Com_AI\\Imagens\\Level1.jpeg",
+      "PackagePath": "staticwebassets\\Outros\\Teste_Com_AI\\Imagens\\Level1.jpeg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\Teste_Com_AI\\Imagens\\Level2.jpeg",
+      "PackagePath": "staticwebassets\\Outros\\Teste_Com_AI\\Imagens\\Level2.jpeg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\Teste_Com_AI\\Imagens\\Level3.jpeg",
+      "PackagePath": "staticwebassets\\Outros\\Teste_Com_AI\\Imagens\\Level3.jpeg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\Teste_Com_AI\\Imagens\\Median.jpeg",
+      "PackagePath": "staticwebassets\\Outros\\Teste_Com_AI\\Imagens\\Median.jpeg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\Teste_Com_AI\\Imagens\\ReuniaocomPovosOriginarios-1.jpeg",
+      "PackagePath": "staticwebassets\\Outros\\Teste_Com_AI\\Imagens\\ReuniaocomPovosOriginarios-1.jpeg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\Teste_Com_AI\\Imagens\\ReuniaocomPovosOriginarios-2.jpeg",
+      "PackagePath": "staticwebassets\\Outros\\Teste_Com_AI\\Imagens\\ReuniaocomPovosOriginarios-2.jpeg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\Teste_Com_AI\\Imagens\\Rshermans_Please_generate_a_high_quality_realistic_image_at_300_5020e0ae-f503-4956-ba7f-19c0726be142.png",
+      "PackagePath": "staticwebassets\\Outros\\Teste_Com_AI\\Imagens\\Rshermans_Please_generate_a_high_quality_realistic_image_at_300_5020e0ae-f503-4956-ba7f-19c0726be142.png"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\Teste_Com_AI\\Imagens\\Selfie-Mulher-PovosOriginarios.jpeg",
+      "PackagePath": "staticwebassets\\Outros\\Teste_Com_AI\\Imagens\\Selfie-Mulher-PovosOriginarios.jpeg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\Teste_Com_AI\\Imagens\\Trofeu-quizz2.jpeg",
+      "PackagePath": "staticwebassets\\Outros\\Teste_Com_AI\\Imagens\\Trofeu-quizz2.jpeg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\Teste_Com_AI\\Imagens\\Win1.jpeg",
+      "PackagePath": "staticwebassets\\Outros\\Teste_Com_AI\\Imagens\\Win1.jpeg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\Teste_Com_AI\\Imagens\\Win2.jpeg",
+      "PackagePath": "staticwebassets\\Outros\\Teste_Com_AI\\Imagens\\Win2.jpeg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\Teste_Com_AI\\Imagens\\Win3.jpeg",
+      "PackagePath": "staticwebassets\\Outros\\Teste_Com_AI\\Imagens\\Win3.jpeg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\Teste_Com_AI\\Imagens\\_0e404e0b-367d-4f19-824b-b75c348979b9.jpeg",
+      "PackagePath": "staticwebassets\\Outros\\Teste_Com_AI\\Imagens\\_0e404e0b-367d-4f19-824b-b75c348979b9.jpeg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\Teste_Com_AI\\Imagens\\_5e58b3d1-daf9-4cc1-ac13-3ed06e400abd.jpeg",
+      "PackagePath": "staticwebassets\\Outros\\Teste_Com_AI\\Imagens\\_5e58b3d1-daf9-4cc1-ac13-3ed06e400abd.jpeg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\Teste_Com_AI\\Imagens\\cenarioSobreOolharDaReflexao,.png",
+      "PackagePath": "staticwebassets\\Outros\\Teste_Com_AI\\Imagens\\cenarioSobreOolharDaReflexao,.png"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\Teste_Com_AI\\Imagens\\levels.avif",
+      "PackagePath": "staticwebassets\\Outros\\Teste_Com_AI\\Imagens\\levels.avif"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\Teste_Com_AI\\Imagens\\trofeu-quizz.jpeg",
+      "PackagePath": "staticwebassets\\Outros\\Teste_Com_AI\\Imagens\\trofeu-quizz.jpeg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\Teste_Com_AI\\Sobre_Romulo.txt",
+      "PackagePath": "staticwebassets\\Outros\\Teste_Com_AI\\Sobre_Romulo.txt"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\Teste_Com_AI\\codigo_Agenda_E_Doc.txt",
+      "PackagePath": "staticwebassets\\Outros\\Teste_Com_AI\\codigo_Agenda_E_Doc.txt"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\modelagem-quizz.drawio",
+      "PackagePath": "staticwebassets\\Outros\\modelagem-quizz.drawio"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\modelagemWeb-quizzFilosofico.drawio",
+      "PackagePath": "staticwebassets\\Outros\\modelagemWeb-quizzFilosofico.drawio"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Outros\\modelagemWeb-quizzFilosofico.jpg",
+      "PackagePath": "staticwebassets\\Outros\\modelagemWeb-quizzFilosofico.jpg"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Quiz1.jfif",
+      "PackagePath": "staticwebassets\\Quiz1.jfif"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\Quiz2.jfif",
+      "PackagePath": "staticwebassets\\Quiz2.jfif"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\main.css",
+      "PackagePath": "staticwebassets\\css\\main.css"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\aos\\aos.css",
+      "PackagePath": "staticwebassets\\css\\vendor\\aos\\aos.css"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\aos\\aos.js",
+      "PackagePath": "staticwebassets\\css\\vendor\\aos\\aos.js"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap-icons\\bootstrap-icons.css",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap-icons\\bootstrap-icons.css"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap-icons\\bootstrap-icons.json",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap-icons\\bootstrap-icons.json"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap-icons\\bootstrap-icons.scss",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap-icons\\bootstrap-icons.scss"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap-icons\\fonts\\bootstrap-icons.woff",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap-icons\\fonts\\bootstrap-icons.woff"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap-icons\\fonts\\bootstrap-icons.woff2",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap-icons\\fonts\\bootstrap-icons.woff2"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\bootstrap\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\css\\vendor\\bootstrap\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\glightbox\\css\\glightbox.css",
+      "PackagePath": "staticwebassets\\css\\vendor\\glightbox\\css\\glightbox.css"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\glightbox\\css\\glightbox.min.css",
+      "PackagePath": "staticwebassets\\css\\vendor\\glightbox\\css\\glightbox.min.css"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\glightbox\\css\\plyr.css",
+      "PackagePath": "staticwebassets\\css\\vendor\\glightbox\\css\\plyr.css"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\glightbox\\css\\plyr.min.css",
+      "PackagePath": "staticwebassets\\css\\vendor\\glightbox\\css\\plyr.min.css"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\glightbox\\js\\glightbox.js",
+      "PackagePath": "staticwebassets\\css\\vendor\\glightbox\\js\\glightbox.js"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\glightbox\\js\\glightbox.min.js",
+      "PackagePath": "staticwebassets\\css\\vendor\\glightbox\\js\\glightbox.min.js"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\isotope-layout\\isotope.pkgd.js",
+      "PackagePath": "staticwebassets\\css\\vendor\\isotope-layout\\isotope.pkgd.js"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\isotope-layout\\isotope.pkgd.min.js",
+      "PackagePath": "staticwebassets\\css\\vendor\\isotope-layout\\isotope.pkgd.min.js"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\php-email-form\\validate.js",
+      "PackagePath": "staticwebassets\\css\\vendor\\php-email-form\\validate.js"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\purecounter\\purecounter_vanilla.js",
+      "PackagePath": "staticwebassets\\css\\vendor\\purecounter\\purecounter_vanilla.js"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\purecounter\\purecounter_vanilla.js.map",
+      "PackagePath": "staticwebassets\\css\\vendor\\purecounter\\purecounter_vanilla.js.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\swiper\\swiper-bundle.min.css",
+      "PackagePath": "staticwebassets\\css\\vendor\\swiper\\swiper-bundle.min.css"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\swiper\\swiper-bundle.min.js",
+      "PackagePath": "staticwebassets\\css\\vendor\\swiper\\swiper-bundle.min.js"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\css\\vendor\\swiper\\swiper-bundle.min.js.map",
+      "PackagePath": "staticwebassets\\css\\vendor\\swiper\\swiper-bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\js\\jquery-ui.js",
+      "PackagePath": "staticwebassets\\js\\jquery-ui.js"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\js\\jquery-ui.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-ui.min.js"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\Materiais-Cursos\\ProgramadorInformatico\\Programador_informatico_7110729\\UFB6-ProjetoFInal\\PM2311\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.QuizFilosofico.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.QuizFilosofico.props",
+      "PackagePath": "build\\QuizFilosofico.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.QuizFilosofico.props",
+      "PackagePath": "buildMultiTargeting\\QuizFilosofico.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.QuizFilosofico.props",
+      "PackagePath": "buildTransitive\\QuizFilosofico.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

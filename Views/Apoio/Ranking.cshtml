@@ -1,0 +1,77 @@
+﻿@model List<QuizFilosofico.Models.Partida>
+
+@{
+    ViewData["Title"] = "Ranking";
+}
+<div>
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    <form asp-action="Ranking">
+                        <label>Jogadores :</label>
+                        @Html.DropDownList("SEUJOGADOR", (SelectList)ViewBag.Partidas, "Escolha o Jogador",new { onchange = "this.form.submit();", id = "seuJogadorDropdown" })
+                    </form>
+                </th>
+
+            </tr>
+        </thead>
+
+    </table>
+
+</div>
+@if (Model != null && Model.Count > 0)
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Jogador</th>
+                <th>Pontuação</th>
+                <th>Data</th>
+                <th>Tema do Quiz</th>
+            </tr>
+        </thead>
+        <tbody id="rankTableBody">
+            @for (int i = 0; i < Model.Count; i++)
+            {
+                <tr>
+                    <td>@(i + 1)</td>
+                    <td>@Model[i].Jogador.Nome</td>
+                    <td>@Model[i].Pontuacao</td>
+                    <td>@Model[i].Data.ToShortDateString()</td>
+                    <td>@Model[i].Quizz.Tema</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Nenhuma partida encontrada.</p>
+}
+</div>
+<script>
+    $(document).ready(function () {
+        // Captura o evento de alteração da dropdown list
+        $('#seuJogadorDropdown').change(function () {
+            // Obtém o valor selecionado
+            var jogadorId = $(this).val();
+
+            // Executa ação desejada (por exemplo, chamar um método no controlador via AJAX)
+            $.ajax({
+                url: '/Apoio/Ranking2',
+                type: 'GET',
+                data: { jogadorId: jogadorId },
+                success: function (response) {
+                    // Atualiza o conteúdo abaixo com os dados das partidas do jogador
+                    $('#_Partidas').html(response);
+                },
+                error: function (error) {
+                    console.log(error);
+                }
+            });
+        });
+    });
+</script>

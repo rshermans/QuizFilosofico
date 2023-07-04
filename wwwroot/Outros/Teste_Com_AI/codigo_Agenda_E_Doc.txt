@@ -1,0 +1,328 @@
+import pickle
+import os
+
+# Dicionário de contatos
+contacts = {
+    1: {"nome": "João Silva", "telefone": "1234567890", "profissão": "Engenheiro", "email": "joaosilva@gmail.com", "apelido": "Joãozinho"},
+    2: {"nome": "Maria Oliveira", "telefone": "0987654321", "profissão": "Médica", "email": "mariaoliveira@gmail.com", "apelido": "Mariinha"}
+}
+
+
+def adicionar_contato(contacts):
+    try:
+        # Pedindo informações do novo contato
+        nome = input("Nome: ")
+        telefone = input("Telefone: ")
+        profissão = input("Profissão: ")
+        email = input("Email: ")
+        apelido = input("Apelido: ")
+
+        # Gerando ID para o novo contato
+        id = max(contacts.keys()) + 1 if len(contacts) > 0 else 1
+
+        # Adicionando contato ao dicionário
+        contacts[id] = {"nome": nome, "telefone": telefone, "profissão": profissão, "email": email, "apelido": apelido}
+
+        # Salvando alterações no arquivo
+        with open("contacts.pickle", "wb") as f:
+            pickle.dump(contacts, f)
+    except Exception as e:
+        return "Ocorreu um erro ao adicionar o contato: {}".format(e)
+    else:
+        return "Contato adicionado com sucesso"
+
+# Gravando o dicionário de contatos em um arquivo
+'''with open("AgendaRomulo.pickle", "wb") as f:
+    pickle.dump(contacts, f)
+
+# Carregando o dicionário de contatos do arquivo
+with open("AgendaRomulo.pickle", "rb") as f:
+    contacts = pickle.load(f)'''
+
+def listar_contatos(contacts):
+    try:
+        # Carregando o dicionário de contatos do arquivo
+        with open("contacts.pickle", "rb") as f:
+            contacts = pickle.load(f)
+        print("ID\t\tNome\t\tTelefone\tProfissão\tEmail\t\t\tApelido")
+        #iterando sobre os contatos ordenados
+        for id, info in sorted(contacts.items(), key=lambda x: x[1]["nome"]):
+            print("{}\t\t{}\t\t{}\t\t{}\t\t{}\t\t{}".format(id, info["nome"], info["telefone"], info["profissão"], info["email"], info["apelido"]))
+        
+    except Exception as e:
+        return "Ocorreu um erro ao listar os contatos: {}".format(e)
+    
+def apagarContato(contacts):
+    try:
+        # Pedindo forma de exclusão
+        opcao = input("Deseja excluir pelo ID ou pelo Nome (ID/Nome)? ")
+        if opcao.upper() == "ID":
+            # Pedindo ID do contato a ser excluído
+            id = int(input("Insira o ID do contato a ser excluído: "))
+            
+            if id in contacts:
+                del contacts[id]
+                with open("contacts.pickle", "wb") as f:
+                    pickle.dump(contacts, f)
+                return "Contato excluido com sucesso"
+            else:
+                return "Contato não encontrado"
+        elif opcao.upper() == "NOME":
+            nome = input("Insira o Nome do contato a ser excluído: ")
+            for id, info in contacts.items():
+                if info["nome"] == nome:
+                    del contacts[id]
+                    with open("contacts.pickle", "wb") as f:
+                        pickle.dump(contacts, f)
+                    return "Contato excluido com sucesso"
+            else:
+                return "Contato não encontrado"
+        else:
+            return "Opção inválida"
+            
+    except Exception as e:
+        return "Ocorreu um erro ao excluir o contato: {}".format(e)
+    
+    
+def editarContatos(contacts):
+    try:
+        # Pedindo forma de edição
+        opcao = input("Deseja editar pelo ID ou pelo Nome (ID/Nome)? ")
+        if opcao.upper() == "ID":
+            # Pedindo ID do contato a ser editado
+            id = int(input("Insira o ID do contato a ser editado: "))
+
+            if id in contacts:
+                # Pedindo novas informações
+                nome = input("Nome: ")
+                telefone = input("Telefone: ")
+                profissão = input("Profissão: ")
+                email = input("Email: ")
+                apelido = input("Apelido: ")
+                # Atualizando informações do contato
+                contacts[id] = {"nome": nome, "telefone": telefone,
+                                "profissão": profissão, "email": email, "apelido": apelido}
+                # Salvando alterações no arquivo
+                with open("contacts.pickle", "wb") as f:
+                    pickle.dump(contacts, f)
+                return "Contato editado com sucesso"
+                
+            else:
+                return "Contato não encontrado"
+                
+        elif opcao.upper() == "NOME":
+            nome = input("Insira o Nome do contato a ser editado: ")
+            for id, info in contacts.items():
+                if info["nome"] == nome:
+                    new_nome = input("Nome: ")
+                    new_telefone = input("Telefone: ")
+                    new_profissao = input("Profissão: ")
+                    new_email = input("Email: ")
+                    new_apelido = input("Apelido: ")
+                    contacts[id] = {"nome": new_nome, "telefone": new_telefone, "profissão": new_profissao, "email": new_email, "apelido": new_apelido}
+                    with open("contacts.pickle", "wb") as f:
+                        pickle.dump(contacts, f)
+                    return "Contato editado com sucesso"
+                    
+            else:
+                return "Contato não encontrado"
+                
+        else:
+            return "Opção inválida"
+    except Exception as e:
+        return "Ocorreu um erro ao editar o contato: {}".format(e)
+
+def limparContatos(contacts):
+    try:
+        confirm = input("Tem certeza que deseja apagar todos os contatos? (s/n)")
+        if confirm.upper() == "S":
+            contacts.clear()
+            with open("contacts.pickle", "wb") as f:
+                pickle.dump(contacts, f)
+            return "Todos os contatos foram apagados com sucesso"
+        elif confirm.upper() == "N":
+            return "Operação cancelada"
+        else:
+            return "Opção inválida"
+    except Exception as e:
+        return "Ocorreu um erro ao limpar os contatos: {}".format(e)
+
+def salvar_CarregarContatos(contacts, op):
+    try:
+        if op.upper() == "SAVE":
+            with open("contacts.pickle", "wb") as f:
+                pickle.dump(contacts, f)
+            return "Contatos salvos com sucesso"
+        elif op.upper() == "LOAD":
+            with open("contacts.pickle", "rb") as f:
+                contacts = pickle.load(f)
+            return "Contatos carregados com sucesso"
+        else:
+            return "Opção inválida"
+    except Exception as e:
+        return "Ocorreu um erro ao salvar/carregar os contatos: {}".format(e)
+    
+def save_load_contacts(contacts, opcao):
+    try:
+        if opcao.upper() == "SAVE":
+            with open("contacts_backup.pickle", "wb") as f:
+                pickle.dump(contacts, f)
+            return "Contatos salvos com sucesso"
+        elif opcao.upper() == "LOAD":
+            with open("contacts_backup.pickle", "rb") as f:
+                contacts = pickle.load(f)
+
+                with open("contacts.pickle", "wb") as f2:
+                    pickle.dump(contacts, f2)
+
+            return "Contatos carregados com sucesso"
+            
+        else:
+            return "Opção inválida"
+    except Exception as e:
+        return "Ocorreu um erro ao salvar/carregar os contatos: {}".format(e)
+
+
+def menu():
+    # Carregando o dicionário de contatos do arquivo
+    os.system('cls' if os.name == 'nt' else 'clear')
+    with open("contacts.pickle", "rb") as f:
+        contacts = pickle.load(f)
+    while True:
+        print("\nAgenda de Contatos")
+        print("1 - Adicionar contato")
+        print("2 - Editar contato")
+        print("3 - Excluir contato")
+        print("4 - Listar contatos")
+        print("5 - Salvar contatos")
+        print("6 - Carregar contatos")
+        print("\n-------------------------------------------------------------------------------------------------------------------------")
+        print("8 - Limpar todos os contatos")
+        print("\n-------------------------------------------------------------------------------------------------------------------------")
+        print("9 - Sair")
+        try:
+            opcao = int(input("\nEscolha uma opção: "))
+            if opcao == 1:
+                print(adicionar_contato(contacts))
+            elif opcao == 2:
+                print(editarContatos(contacts))
+            elif opcao == 3:
+                print(apagarContato(contacts))
+            elif opcao == 4:
+                print(listar_contatos(contacts))
+            #elif opcao == 5:
+                #print(salvar_CarregarContatos(contacts,"SAVE"))
+                
+            #elif opcao == 6:
+                #print(salvar_CarregarContatos(contacts, "LOAD"))'''
+            elif opcao == 5:
+                print(save_load_contacts(contacts, "SAVE"))
+            elif opcao == 6:
+                print(save_load_contacts(contacts, "LOAD"))
+            elif opcao == 8:
+                print(limparContatos(contacts))
+                
+            elif opcao == 9:
+                print("Saindo...")
+                break
+            else:
+                print("Opção inválida, escolha novamente")
+        except ValueError:  
+              print('\nOpção inválida. Selecione um número de 1 a 8.')
+        input('\nPressione enter para continuar.')  
+            
+            ############################## função menu ######################################################
+            
+menu()
+
+
+
+
+Com esta função, é possível editar as informações dos contatos existentes na Agenda. Ela permite a edição tanto pelo ID quanto pelo Nome. Desta forma, é possível manter sempre as informações atualizadas e precisas dos contatos. Além disso, a função trata possíveis exceções, garantindo a estabilidade e segurança do programa.
+Edição de contato existente no dicionário de contatos. O ID ou o nome do contato é usado para localizar o contato a ser editado.
+    As informações do contato são solicitadas ao usuário e atualizadas no dicionário de contatos.
+    O dicionário de contatos é serializado em um arquivo "contacts.pickle" usando o módulo pickle.
+    :param contacts: Dicionário de contatos existente
+    :return: Mensagem de sucesso ou erro
+   
+
+
+
+"Em resumo, a Agenda de Contatos desenvolvida em Python é uma ferramenta valiosa para qualquer pessoa que deseja manter seus contatos organizados e acessíveis. Com suas funcionalidades de adição, listagem, edição, exclusão, salvar e carregar contatos, além da possibilidade de listar os contatos em ordem alfabética e limpar todos os contatos. A interface simples e intuitiva do programa torna-o fácil de usar para qualquer pessoa, garantindo assim a estabilidade e segurança do programa. Este programa é uma excelente opção para gerenciar contatos pessoais de forma eficiente e organizada."
+
+
+
+edit_contact(contacts):
+    """
+    Edição de contato existente no dicionário de contatos. O ID ou o nome do contato é usado para localizar o contato a ser editado.
+    As informações do contato são solicitadas ao usuário e atualizadas no dicionário de contatos.
+    O dicionário de contatos é serializado em um arquivo "contacts.pickle" usando o módulo pickle.
+    :param contacts: Dicionário de contatos existente
+    :return: Mensagem de sucesso ou erro
+    """
+Essa função busca um contato existente no dicionário de contatos, usando seu ID ou Nome como chave. Uma vez encontrado, a função solicita ao usuário as novas informações do contato e atualiza o dicionário de contatos. O dicionário de contatos é então armazenado no arquivo "contacts.pickle" usando a biblioteca pickle. A função retorna uma mensagem de sucesso ou erro para o usuário.
+
+list_contacts(contacts, order=None):
+    
+    Lista os contatos existentes no dicionário de contatos. 
+    :param contacts: Dicionário de contatos existente
+    :param order: ordem alfabética para listagem dos contatos
+    :return: Lista de contatos
+    """
+Nesta função lista todos os contatos existentes no dicionário de contatos, e implementa a listagem ordenando-a alfabeticamente. Essa função pode ser chamada passando o dicionário de contatos existente e, são parametrizados com \t uma tentativa de apresentar ao utilizador a listagem visualmente mais agradavél. Neste pornto é possivel que nem sempre, a depender da composicão de dados inserido, a exibição fique adequada, este ponto era pasivo de melhorias.
+
+
+delete_contact(contacts):
+    """
+    Exclui um contato existente no dicionário de contatos. O ID ou o nome do contato é usado para localizar o contato a ser excluído.
+    O dicionário de contatos é atualizado e serializado em um arquivo "contacts.pickle" usando o módulo pickle.
+    :param contacts: Dicionário de contatos existente
+    :return: Mensagem de sucesso ou erro """
+	
+	Com esta função é possivel excluir um contato existente no dicionário de contatos, usando seu ID ou Nome como chave. Uma vez encontrado, a função remove esse contato do dicionário de contato e atualiza o arquivo "contaots.pickle" com o metódo pickle. Isso permite que o contato seja removido permanentemente, e não apenas temporariamente da memória. A função retorna uma mensagem de sucesso ou erro para o usuário, indicando se a operação foi realizada com sucesso ou não. Além disso, é importante que essa função seja usada com cuidado, pois uma vez excluído, o contato não poderá ser recuperado. É uma boa prática sempre confirmar com o usuário antes de excluir um contato.
+	
+	
+def clear_contacts(contacts):
+    """
+    Limpa todos os contatos existentes no dicionário de contatos. 
+    Isso remove todos os contatos do dicionário e os remove permanentemente do arquivo "contacts.pickle" usando o módulo pickle.
+    :param contacts: Dicionário de contatos existente
+    :return: Mensagem de sucesso ou erro
+    """
+Essa função permite limpar todos os contatos existentes no dicionário de contatos. Ela remove todos os contatos do dicionário e os remove permanentemente do arquivo "contacts.pickle" usando o módulo pickle. É importante notar que essa operação não pode ser desfeita, então é sempre uma boa prática confirmar com o usuário antes de limpar todos os contatos. A função retorna uma mensagem de sucesso ou erro para o usuário, indicando se a operação foi realizada com sucesso ou não.
+
+A função plimpar todos os contatos existentes no dicionário de contatos. Ela apaga todos os contatos do dicionário e do arquivo "contacts.pickle" usando o módulo pickle. Esta operação é irreversível, então mantivemos as boas práticas para confirmar com o usuário antes de remover todos os contatos. Esta função é basicamente a explicação da anterior, no entanto mais simples, pois o metodo 'Clear' agiliza o processo de limpar todos os contatos.
+
+exportarContatos(contatos):
+    """
+    Exporta o dicionário de contatos para um arquivo.
+    Isso salva o dicionário de contatos em um arquivo "contatos_backup.pickle" usando o módulo pickle.
+    :param contatos: Dicionário de contatos existente
+    :return: Mensagem de sucesso ou erro
+    """
+Essa função permite exportar o dicionário de contatos para um arquivo. Ela salva o dicionário de contatos em um arquivo "contatos_backup.pickle" usando o módulo pickle. Isso permite que os contatos sejam salvos permanentemente, fornecendo uma cópia de backup dos contatos. A função retorna uma mensagem de sucesso ou erro para o usuário, indicando se a operação foi realizada com sucesso ou não.
+
+Segunda parte (carregar):
+
+Copy code
+def carregarContatos(contatos):
+    """
+    Carrega o dicionário de contatos de um arquivo.
+    Isso carrega o dicionário de contatos de um arquivo "contatos_backup.pickle" usando o módulo pickle e salvando-o no arquivo "contatos.pickle"
+    :param contatos: Dicionário de contatos existente
+    :return: Mensagem de sucesso ou erro
+    """
+Essa função permite carregar o dicionário de contatos de um arquivo. Ela carrega o dicionário de contatos de um arquivo "contatos_backup.pickle" usando o módulo pickle e salvando-o no arquivo "contatos.pickle". Isso permite recuperar contatos que foram previamente salvos em um arquivo de backup. A função retorna uma mensagem de sucesso ou erro para o usuário, indicando se a operação foi realizada com sucesso ou não. É importante notar que essa operação pode substituir os contatos existentes no dicionário, então é sempre uma boa prática confirmar com o usuário antes de carregar contatos de um arquivo.
+
+A função menu é a função principal do programa, onde o usuário pode escolher as opções disponíveis para gerenciar seus contatos. Ela é responsável por exibir as opções de menu para o usuário e chamar as funções correspondentes de acordo com a opção escolhida. Além disso, ela também carrega o dicionário de contatos a partir do arquivo e trata as exceções que podem ocorrer durante a execução. A função menu também fornece uma opção para sair do programa, permitindo que o usuário finalize a aplicação de maneira segura.
+
+
+
+Em conclusão, este programa é uma Agenda de Contatos desenvolvida em Python que fornece uma maneira fácil e organizada de gerenciar contatos pessoais. Ele possui uma série de funções, incluindo adicionar, editar, excluir, listar e limpar contatos, além de salvar e carregar contatos de um arquivo. Todas essas funções foram desenvolvidas com a preocupação de garantir a facilidade de uso, a segurança dos dados e a eficiência no gerenciamento de contatos. A aplicação foi documentada de forma clara e detalhada, tornando-a fácil de entender e utilizar para qualquer usuário. Com esta Agenda, é possível manter os contatos organizados e acessíveis, tornando-se uma ferramenta valiosa para qualquer pessoa.
+
+Para desenvolver este programa, você pode ter usado várias referências, como documentação do Python para as funções de manipulação de arquivos (open, pickle, etc.) e dicionários, tutoriais e exemplos de código para a implementação de uma agenda de contatos, e documentação sobre boas práticas de programação em Python, como tratamento de exceções e estruturação do código. Alguns exemplos de fontes de referência que você pode ter usado incluem:
+
+A documentação oficial do Python, disponível em https://docs.python.org/3/
+Tutoriais e exemplos de código de agendas de contatos em Python, disponíveis em sites como o GitHub e o Stack Overflow.
+Artigos e tutoriais sobre boas práticas de programação em Python, disponíveis em sites como o Real Python e o Python.org.
+Referências para o uso do pickle que pode ser encontrada em https://docs.python.org/3/library/pickle.html

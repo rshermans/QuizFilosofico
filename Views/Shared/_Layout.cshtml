@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Quiz Filosófico</title>
+ 
+    <!-- Template Main CSS File -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Equipas.styles.css" asp-append-version="true" />
+    <script>
+        $(document).ready(function () {
+            $('.carousel').carousel();
+        });
+    </script>
+    <style>
+        center
+        {
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        
+                         <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Quiz" asp-action="Quizz">Quiz Filosófico</a>
+                        </li>
+                       @* <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="PessoalQuizz" asp-action="Quizz">Teste</a>
+                        </li>*@
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="Index">Login</a>
+                        </li>
+                        <li class="dropdown">
+                            <button type="button" class="btn btn-group-sm dropdown-toggle" data-bs-toggle="dropdown">
+                                Instruções
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Apoio" asp-action="Index">Regras</a></li>
+                                <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Apoio" asp-action="Ranking">Ranking</a></li>
+                                <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Apoio" asp-action="Referencias">Referencias</a></li>
+                                <li class="nav-item"><a class="nav-link text-dark" hidden asp-area="" asp-controller="Diversos" asp-action="Index">Diversos</a></li>
+                            </ul>
+                         </li>
+
+                         
+
+                    </ul>
+                    @*@Context.Session.GetString("JOGADOR")*@
+                    <div class="alert-success" style="padding-left: 10px;" id="player-info">
+                        @{
+                            if (Context.Session.GetString("JOGADOR") == "" || 
+                            Context.Session.GetString("JOGADOR") == null)
+                            {
+
+                                <span> Bem-vindo, Jogador!</span>
+                            } 
+                            else
+                        {
+                                <span>Bem-vindo @Context.Session.GetString("JOGADOR")!</span>
+                            }
+                        }
+
+                        @* <span>Pontuação: @HttpContext.Session.GetInt32("PONTUACAO")</span>*@
+                    </div>
+                    <div style="padding: 10px 10px 10px 10px;">
+                        @{
+                            if (Context.Session.GetString("ESTADO") == "ATIVO")
+                            {
+                                <button type="button" class="btn btn-warning nav-link text-dark" data-bs-toggle="popover" title="Logout" data-bs-content="Logout">
+                                    <a class="nav-link text-dark" id="logout-button" asp-area="" asp-controller="Logout" asp-action="Index">Logout</a>
+                                </button>
+                            }
+                        }
+                    </div>
+                    @{
+                        if (Context.Session.GetString("ADMINISTRADOR") == "SIM")
+                        {
+                        <div style="padding-left: 0px;" >
+                       
+                        <button type="button" class="btn btn-primary nav-link text-dark" data-bs-toggle="popover" title="Organização do Quiz" data-bs-content="Organização">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Organizacao" asp-action="Index">Organização</a>
+                        </button>
+                        </div>
+                        }
+                }
+                </div>
+               
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+<footer style=“font-size: 8px;background-color: gray; color: white; text-align: center; padding: 8px;”>
+    <center>
+        <p style=“font-size: 8px;animation: blink 1s infinite; background-color: gray; color: white; text-align: center; padding: 8px;””>Quiz Filosófico © 2023. Todos os direitos reservados.</p>
+        <p sstyle="font-size: 8px;">Rômulo Sherman <i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i>rshermans@sapo.pt</p>
+
+        <a href="http:\\www.facebook.com" target="_blank" class="w3-hover-text-green"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+        <a href="http:\\www.instagram.com" target="_blank" class="w3-hover-text-green">
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+        </a>
+        <a href="http:\\www.snapchat.com" target="_blank" class="w3-hover-text-green">
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+        </a>
+            <a href="http:\\www.pinterest.com" target="_blank" class="w3-hover-text-green">
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        </a>
+                <a href="http:\\www.twitter.com" target="_blank" class="w3-hover-text-green">
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+        </a>
+                    <a href="http:\\www.linkedin.com" target="_blank" class="w3-hover-text-green">
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </a>
+        <p class="w3-medium">Realização <a href="htpp:\\www.quizzeseducacao.com" target="_blank" class="w3-hover-text-green">quizzedu.com</a>
+    </center>
+</footer>
+</html>
+

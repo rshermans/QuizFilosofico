@@ -1,0 +1,217 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = QuizFilosofico
+build_property.RootNamespace = QuizFilosofico
+build_property.ProjectDir = D:\Materiais-Cursos\ProgramadorInformatico\Programador_informatico_7110729\UFB6-ProjetoFInal\PM2311\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Materiais-Cursos\ProgramadorInformatico\Programador_informatico_7110729\UFB6-ProjetoFInal\PM2311
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Apoio/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBvaW9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Apoio/Niveis.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBvaW9cTml2ZWlzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Apoio/Ranking.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBvaW9cUmFua2luZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Apoio/Referencias.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBvaW9cUmVmZXJlbmNpYXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Diversos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGl2ZXJzb3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Diversos/JogoCompletarPalavras.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGl2ZXJzb3NcSm9nb0NvbXBsZXRhclBhbGF2cmFzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Diversos/JogoDaForca-erro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGl2ZXJzb3NcSm9nb0RhRm9yY2EtZXJyby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Diversos/JogoDaForca.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGl2ZXJzb3NcSm9nb0RhRm9yY2EuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Diversos/ResultadoJogoDaForca.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGl2ZXJzb3NcUmVzdWx0YWRvSm9nb0RhRm9yY2EuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/ItemDaPerguntas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbURhUGVyZ3VudGFzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/ItemDaPerguntas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbURhUGVyZ3VudGFzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/ItemDaPerguntas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbURhUGVyZ3VudGFzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/ItemDaPerguntas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbURhUGVyZ3VudGFzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/ItemDaPerguntas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbURhUGVyZ3VudGFzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Jogadores/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9nYWRvcmVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Jogadores/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9nYWRvcmVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Jogadores/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9nYWRvcmVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Jogadores/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9nYWRvcmVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Jogadores/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9nYWRvcmVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Login/Jalogado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSmFsb2dhZG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Logout/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9nb3V0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Logout/_LogoutConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9nb3V0XF9Mb2dvdXRDb25maXJtYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Organizacao/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JnYW5pemFjYW9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Partidas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlkYXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Partidas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlkYXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Partidas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlkYXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Partidas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlkYXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Partidas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlkYXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Perguntas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZ3VudGFzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Perguntas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZ3VudGFzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Perguntas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZ3VudGFzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Perguntas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZ3VudGFzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Perguntas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZ3VudGFzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Quizzs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpenpzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Quizzs/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpenpzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Quizzs/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpenpzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Quizzs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpenpzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Quizzs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpenpzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Quiz/Questoes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpelxRdWVzdG9lcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Quiz/QuestoesAPasso.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpelxRdWVzdG9lc0FQYXNzby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Quiz/Quizz.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpelxRdWl6ei5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Quiz/Resultado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpelxSZXN1bHRhZG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Quiz/TestResultado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpelxUZXN0UmVzdWx0YWRvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Materiais-Cursos/ProgramadorInformatico/Programador_informatico_7110729/UFB6-ProjetoFInal/PM2311/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-4qzr7914d9

@@ -1,0 +1,68 @@
+﻿
+<h3>Sobre a Partida:</h3>
+
+
+<div class="row">
+    <div class="col-md-6">
+        <!-- Card de resultados da partida -->
+        <div class="card">
+            <div class="card-header">
+                Resultados da Partida
+            </div>
+            <div class="card-body">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Obrigado, Jogador!</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Parabéns pelo jogo!</h6>
+                        <h5>Você acertou: @ViewBag.Resultado</h5>
+                        <p class="card-text">@ViewBag.Mensagem</p>
+                        <br />
+                        <a href="Quizz" class="card-link btn btn-primary">Jogar Novamente</a>
+                        <a asp-controller="Home" asp-action="Index" class="card-link btn btn-secondary">Voltar ao Início</a>
+
+                        @*<a href="Quizz" class="card-link">Jogar Novamente</a>
+                        <a asp-controller="Home" asp-action="Index" class="card-link">Voltar ao Início</a>*@
+                    </div>
+                </div>
+                <br />
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <!-- Imagem associada à pontuação -->
+        <div class="card">
+            <div class="card-header">
+                Trofeú:
+            </div>
+            <div class="card-body">
+                <!-- Imagem correspondente à pontuação aqui -->
+                @{
+                    if (ViewBag.Resultado == "3")
+                    {
+                        <img src="~/Outros/Teste_Com_AI/Imagens/Win1.jpeg" class="d-block w-100 carousel-image" alt="Questão da liberdade individual versus o bem comum">
+                    }
+                    else
+                    {
+                        if(ViewBag.Resultado == "2")
+                        {
+                            <img src="~/Outros/Teste_Com_AI/Imagens/Win2.jpeg" class="d-block w-100 carousel-image" alt="Questão da liberdade individual versus o bem comum">
+                        }
+                        else
+                        {
+                            <img src="~/Outros/Teste_Com_AI/Imagens/Win3.jpeg" class="d-block w-100 carousel-image" alt="Questão da liberdade individual versus o bem comum">
+                        }
+                    }
+                    
+                }
+        
+            </div>
+        </div>
+        <!-- Link para o ranking e partidas anteriores -->
+        <div class="text-center mt-3">
+            <a class="btn btn-primary" asp-controller="Apoio" asp-action="Ranking">Ver Ranking</a>
+        </div>
+    </div>
+</div>
+
+          

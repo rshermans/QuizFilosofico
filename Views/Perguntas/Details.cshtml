@@ -1,0 +1,39 @@
+﻿@model QuizFilosofico.Models.Pergunta
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Detalhes</h1>
+
+<div>
+    <h4>Pergunta</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Enunciado)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Enunciado)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nivel)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nivel)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Quizz)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.QuizzId) - @Html.DisplayFor(model=> Model.Quizz.Tema)
+        </dd>
+    </dl>
+</div>
+<div>
+        <button type="button" class="btn btn-outline-success" data-bs-toggle="popover" title="Inicio" data-bs-content="Edições">
+            <a asp-action="Edit" asp-route-id="@Model?.Id">Editar</a>
+         </button>
+        
+    <a asp-action="Index">Voltar a Lista de Perguntas</a>
+</div>
