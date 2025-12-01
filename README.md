@@ -27,6 +27,31 @@ O projeto "Quiz Filosófico" oferece as seguintes funcionalidades:
 7 - Interface Amigável: Desfrute de uma interface intuitiva e agradável, projetada para proporcionar uma experiência de jogo envolvente.
 8 - O "Quiz Filosófico" oferece uma oportunidade de testar seus conhecimentos em filosofia de maneira divertida e educativa. Aproveite o jogo e aprimore sua compreensão sobre temas filosóficos importantes.
 
+## Banco de dados com SQLite
+
+Para simplificar a configuração, o projeto aceita uma connection string SQLite (ex.: [SQLite Cloud](https://www.sqlitecloud.io/) ou arquivo local).
+
+1. Edite `appsettings.json` e preencha `ConnectionStrings:SQLite` com a URL/arquivo desejado. Por padrão, é usado `Data Source=quizfilosofico.db;Cache=Shared` para criar um arquivo local.
+2. Ao iniciar a aplicação (`dotnet run --project QuizFilosofico.csproj --urls http://localhost:5000`), o Entity Framework cria as tabelas automaticamente se o banco estiver vazio.
+3. Caso prefira SQL Server, mantenha `ConnectionStrings:LAGOSTIM` configurada e deixe `ConnectionStrings:SQLite` em branco.
+
+## Geração dinâmica de quizzes com OpenAI
+
+O backend agora expõe um endpoint para gerar quizzes dinamicamente usando a API da OpenAI.
+
+1. Defina a chave da OpenAI em `OpenAI:ApiKey` (no `appsettings.json` ou variável de ambiente). Ajuste o modelo se desejar (`OpenAI:Model`).
+2. Faça uma chamada POST para `api/OpenAiQuiz/gerar` enviando um JSON como:
+
+```json
+{
+  "tema": "Existencialismo", 
+  "descricao": "Perguntas sobre Sartre e Camus",
+  "quantidadePerguntas": 5
+}
+```
+
+3. O endpoint cria o quiz e retorna o identificador para consulta em `Quizzs/Details/{id}`.
+
 ## Instalação
 
 Instruções de Instalação
