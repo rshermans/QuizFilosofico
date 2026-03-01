@@ -1,0 +1,6 @@
+legacy_dotnet/obj/
+legacy_dotnet/bin/
+__pycache__/
+*.pyc
+.env
+.pytest_cache/
