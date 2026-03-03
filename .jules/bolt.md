@@ -1,0 +1,3 @@
+## 2024-03-03 - Avoid client-side materialization for random row selection in EF Core
+**Learning:** Loading all rows into memory using `.AsEnumerable()` and then sorting them randomly with `.OrderBy(x => random.Next())` creates a massive performance bottleneck as the dataset grows, because it loads the entire table from the database into RAM before picking a small subset.
+**Action:** Use `.OrderBy(p => Guid.NewGuid())` inside the EF Core query. This is translated to a database-side random function by the provider (or falls back appropriately) and prevents fetching thousands of rows to memory just to select 3.

@@ -74,22 +74,20 @@ public class Quiz : Controller
             //return View();
         }
 
-        // Cria um objeto Random para gerar números aleatórios
-            var random = new Random();
         //Variavel sem include, criada para opção do programador
             var perguntas = _context.Perguntas.Where(n => n.Nivel == nivel && n.QuizzId == tema).ToList();
 
         //Este Bag leva as Perguntas para a View
         ViewBag.PerguntaX = _context.Perguntas
                 .Where(n => n.Nivel == nivel && n.QuizzId == tema)
-                .AsEnumerable() // Materializa a consulta e traz os resultados para a memória
-                .OrderBy(p => random.Next()) // Ordena as perguntas por um número aleatório no lado do cliente
+                // ⚡ Bolt: Optimize query by selecting random rows on the DB side instead of loading everything into memory
+                .OrderBy(p => Guid.NewGuid()) // Ordena as perguntas por um número aleatório no lado do servidor
                 .Take(3) // Pega as 3 primeiras perguntas da sequência ordenada
                 .ToList();
         // Este Bag leva os itens das perguntas para a view
         ViewBag.ItemDaPergunta = _context.ItemDaPerguntas
-            .AsEnumerable() // Materializa a consulta e traz os resultados para a memória
-            .OrderBy(p => random.Next())// Ordena os itens da Pergunta por um número aleatório no lado do cliente
+            // ⚡ Bolt: Optimize query by selecting random rows on the DB side instead of loading everything into memory
+            .OrderBy(p => Guid.NewGuid())// Ordena os itens da Pergunta por um número aleatório no lado do servidor
             .ToList();
             // Armazenar o valor de tema na variável de sessão
             // Inserção do ?? para previnir em caso de tema = null, inserir o default 0 
