@@ -80,16 +80,16 @@ public class Quiz : Controller
             var perguntas = _context.Perguntas.Where(n => n.Nivel == nivel && n.QuizzId == tema).ToList();
 
         //Este Bag leva as Perguntas para a View
+        // ⚡ Bolt: Removed .AsEnumerable() to prevent client-side materialization and used Guid.NewGuid() for database-side random sorting.
         ViewBag.PerguntaX = _context.Perguntas
                 .Where(n => n.Nivel == nivel && n.QuizzId == tema)
-                .AsEnumerable() // Materializa a consulta e traz os resultados para a memória
-                .OrderBy(p => random.Next()) // Ordena as perguntas por um número aleatório no lado do cliente
+                .OrderBy(p => Guid.NewGuid()) // Ordena as perguntas por um número aleatório no banco de dados
                 .Take(3) // Pega as 3 primeiras perguntas da sequência ordenada
                 .ToList();
         // Este Bag leva os itens das perguntas para a view
+        // ⚡ Bolt: Removed .AsEnumerable() and used Guid.NewGuid() for database-side random sorting to improve performance.
         ViewBag.ItemDaPergunta = _context.ItemDaPerguntas
-            .AsEnumerable() // Materializa a consulta e traz os resultados para a memória
-            .OrderBy(p => random.Next())// Ordena os itens da Pergunta por um número aleatório no lado do cliente
+            .OrderBy(p => Guid.NewGuid())// Ordena os itens da Pergunta por um número aleatório no banco de dados
             .ToList();
             // Armazenar o valor de tema na variável de sessão
             // Inserção do ?? para previnir em caso de tema = null, inserir o default 0 
