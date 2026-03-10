@@ -1,0 +1,3 @@
+## 2024-03-10 - Avoid client-side materialization for random sorting in EF Core
+**Learning:** Using `.AsEnumerable().OrderBy(x => random.Next())` to select random rows forces Entity Framework Core to fetch all rows from the database into memory before sorting them on the client. This creates a massive performance bottleneck and high memory overhead, especially as the tables grow.
+**Action:** Always use `.OrderBy(x => Guid.NewGuid())` for database-side random sorting in Entity Framework Core. This translates to an efficient database query (like `ORDER BY NEWID()` in SQL Server or `ORDER BY RANDOM()` in SQLite/PostgreSQL) and avoids loading unnecessary data into memory.
