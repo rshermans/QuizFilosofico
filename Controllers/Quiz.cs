@@ -82,14 +82,14 @@ public class Quiz : Controller
         //Este Bag leva as Perguntas para a View
         ViewBag.PerguntaX = _context.Perguntas
                 .Where(n => n.Nivel == nivel && n.QuizzId == tema)
-                .AsEnumerable() // Materializa a consulta e traz os resultados para a memória
-                .OrderBy(p => random.Next()) // Ordena as perguntas por um número aleatório no lado do cliente
+                // ⚡ Bolt: Removed .AsEnumerable() and used Guid.NewGuid() for database-side random sorting, preventing OOM/performance bottlenecks on large sets
+                .OrderBy(p => Guid.NewGuid()) // Ordena as perguntas por um número aleatório no lado do banco de dados (EF Core)
                 .Take(3) // Pega as 3 primeiras perguntas da sequência ordenada
                 .ToList();
         // Este Bag leva os itens das perguntas para a view
         ViewBag.ItemDaPergunta = _context.ItemDaPerguntas
-            .AsEnumerable() // Materializa a consulta e traz os resultados para a memória
-            .OrderBy(p => random.Next())// Ordena os itens da Pergunta por um número aleatório no lado do cliente
+            // ⚡ Bolt: Removed .AsEnumerable() and used Guid.NewGuid() for database-side random sorting, preventing OOM/performance bottlenecks on large sets
+            .OrderBy(p => Guid.NewGuid()) // Ordena os itens da Pergunta por um número aleatório no lado do banco de dados (EF Core)
             .ToList();
             // Armazenar o valor de tema na variável de sessão
             // Inserção do ?? para previnir em caso de tema = null, inserir o default 0 
