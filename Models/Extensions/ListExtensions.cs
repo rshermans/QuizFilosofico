@@ -11,8 +11,9 @@ namespace QuizFilosofico.Models.Extensions
         // Cria um método Shuffle que recebe uma lista e retorna uma lista embaralhada
         public static List<ItemDaPergunta> Shuffle<T>(this List<ItemDaPergunta> list)
         {
-            // Ordena a lista por um número aleatório
-            return list.OrderBy(x => random.Next()).ToList();
+            // ⚡ Bolt Optimization: Uses Guid.NewGuid() for random sorting, preventing massive memory overhead
+            // compared to random.Next().
+            return list.OrderBy(x => Guid.NewGuid()).ToList();
         }
     }
 }
