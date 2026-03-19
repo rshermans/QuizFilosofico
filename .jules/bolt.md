@@ -1,0 +1,3 @@
+## 2024-05-24 - Entity Framework Core: Database-Side Random Sorting vs Client-Side
+**Learning:** Using `OrderBy(x => random.Next())` on an Entity Framework `IQueryable` often forces client-side evaluation, materializing the entire dataset into memory before sorting. This creates a massive performance and memory bottleneck, especially for large tables.
+**Action:** Always use `OrderBy(p => Guid.NewGuid())` when needing random rows directly from the database with EF Core. This translates to `ORDER BY NEWID()` in SQL Server (or `RANDOM()` in SQLite), properly delegating the work to the database engine.
