@@ -27,7 +27,11 @@ namespace QuizFilosofico.Controllers
                 try
                 {
                     ViewBag.JOGADORES = new SelectList(_context.Jogadores, "Id", "Nome");
-                    var applicationDbContext = _context.Partidas.Include(p => p.Jogador)
+                    // ⚡ Bolt: Added .AsNoTracking() to bypass EF Core Change Tracker for read-only view.
+                    // This reduces memory allocation and CPU overhead.
+                    var applicationDbContext = _context.Partidas
+                        .AsNoTracking()
+                        .Include(p => p.Jogador)
                         .Include(p => p.Quizz)
                         .OrderByDescending(p => p.Data);
                     return View(await applicationDbContext.ToListAsync());
@@ -45,7 +49,10 @@ namespace QuizFilosofico.Controllers
             else
             {
                 ViewBag.JOGADORES = new SelectList(_context.Jogadores, "Id", "Nome");
+                // ⚡ Bolt: Added .AsNoTracking() to bypass EF Core Change Tracker for read-only view.
+                // This reduces memory allocation and CPU overhead.
                 var applicationDbContext = _context.Partidas
+                    .AsNoTracking()
                     .Include(p => p.Jogador)
                     .Include(p => p.Quizz).Where(p => p.JogadorId == Convert.ToInt32(Jogadorselecionado))
                     .OrderByDescending(p => p.Data);
