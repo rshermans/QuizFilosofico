@@ -1,3 +1,3 @@
-## 2024-03-01 - EF Core N+1 OrderBy Random In-Memory Fix
-**Learning:** In C# EF Core, calling `.AsEnumerable()` or `.ToList()` before `.OrderBy()` forces all records from the database into application memory. When dealing with `.OrderBy(p => random.Next())` (using System.Random) after bringing data to memory, this results in significant performance issues and memory bloat, especially as table size grows.
-**Action:** Always prefer database-level random sorting by using `.OrderBy(p => Guid.NewGuid())` on the `IQueryable` before materializing the query. This ensures only the needed rows (e.g. `.Take(3)`) are fetched over the network and memory footprint remains minimal.
+## 2024-06-18 - EF Core Change Tracker Overhead on Read-Only Queries
+**Learning:** By default, Entity Framework Core tracks all returned entities in its Change Tracker. For read-only views like dashboards or listing pages that don't modify data, this adds unnecessary memory allocation and CPU overhead.
+**Action:** Always append `.AsNoTracking()` to LINQ queries when the fetched entities will only be read and not updated, making the queries faster and more memory-efficient.
