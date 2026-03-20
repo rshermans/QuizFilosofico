@@ -74,8 +74,6 @@ public class Quiz : Controller
             //return View();
         }
 
-        // Cria um objeto Random para gerar números aleatórios
-            var random = new Random();
         //Variavel sem include, criada para opção do programador
             var perguntas = _context.Perguntas.Where(n => n.Nivel == nivel && n.QuizzId == tema).ToList();
 
