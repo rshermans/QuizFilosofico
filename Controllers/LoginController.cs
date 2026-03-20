@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using QuizFilosofico.Data;
 using QuizFilosofico.Models;
 
@@ -27,6 +27,23 @@ namespace QuizFilosofico.Controllers
             return RedirectToAction("Index", "Home");
         }
 
+        [HttpGet]
+        public IActionResult Index()
+        {
+            if (HttpContext.Session.GetString("CONTROLADOR") == null)
+                HttpContext.Session.SetString("CONTROLADOR", "Home");
+
+            if (!string.IsNullOrEmpty(HttpContext.Session.GetString("JOGADOR")))
+            {
+                // Redirecionar para uma página informando que o jogador já está logado
+                return Redirect("~/Login/Jalogado");
+            }
+
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Index(string email, string password)
         {
             // Caso o login não tenha sido invocado de lado nenhum,
