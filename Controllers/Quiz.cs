@@ -74,22 +74,20 @@ public class Quiz : Controller
             //return View();
         }
 
-        // Cria um objeto Random para gerar números aleatórios
-            var random = new Random();
         //Variavel sem include, criada para opção do programador
             var perguntas = _context.Perguntas.Where(n => n.Nivel == nivel && n.QuizzId == tema).ToList();
 
         //Este Bag leva as Perguntas para a View
+        // ⚡ Bolt: Ordenar aleatoriamente no banco de dados para evitar carregar todos os registros na memória
         ViewBag.PerguntaX = _context.Perguntas
                 .Where(n => n.Nivel == nivel && n.QuizzId == tema)
-                // ⚡ Bolt: Removed .AsEnumerable() and used Guid.NewGuid() for database-side random sorting, preventing OOM/performance bottlenecks on large sets
-                .OrderBy(p => Guid.NewGuid()) // Ordena as perguntas por um número aleatório no lado do banco de dados (EF Core)
+                .OrderBy(p => Guid.NewGuid()) // Ordena as perguntas por um número aleatório no lado do banco de dados
                 .Take(3) // Pega as 3 primeiras perguntas da sequência ordenada
                 .ToList();
         // Este Bag leva os itens das perguntas para a view
+        // ⚡ Bolt: Ordenar aleatoriamente no banco de dados para evitar carregar todos os registros na memória
         ViewBag.ItemDaPergunta = _context.ItemDaPerguntas
-            // ⚡ Bolt: Removed .AsEnumerable() and used Guid.NewGuid() for database-side random sorting, preventing OOM/performance bottlenecks on large sets
-            .OrderBy(p => Guid.NewGuid()) // Ordena os itens da Pergunta por um número aleatório no lado do banco de dados (EF Core)
+            .OrderBy(p => Guid.NewGuid())// Ordena os itens da Pergunta por um número aleatório no lado do banco de dados
             .ToList();
             // Armazenar o valor de tema na variável de sessão
             // Inserção do ?? para previnir em caso de tema = null, inserir o default 0 

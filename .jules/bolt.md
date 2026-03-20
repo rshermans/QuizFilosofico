@@ -1,3 +1,3 @@
-## 2024-05-24 - Avoid Client-Side Materialization for Random Sorting in EF Core
-**Learning:** Using .AsEnumerable().OrderBy(x => random.Next()) in EF Core queries forces the entire table to be loaded into application memory before sorting. This creates a massive performance bottleneck.
-**Action:** Use .OrderBy(p => Guid.NewGuid()) instead, which EF Core translates to a native SQL random sort (e.g., ORDER BY RANDOM()), shifting the workload to the database and preventing large memory allocations.
+## 2024-03-01 - EF Core N+1 OrderBy Random In-Memory Fix
+**Learning:** In C# EF Core, calling `.AsEnumerable()` or `.ToList()` before `.OrderBy()` forces all records from the database into application memory. When dealing with `.OrderBy(p => random.Next())` (using System.Random) after bringing data to memory, this results in significant performance issues and memory bloat, especially as table size grows.
+**Action:** Always prefer database-level random sorting by using `.OrderBy(p => Guid.NewGuid())` on the `IQueryable` before materializing the query. This ensures only the needed rows (e.g. `.Take(3)`) are fetched over the network and memory footprint remains minimal.
