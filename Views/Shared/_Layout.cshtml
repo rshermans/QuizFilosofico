@@ -80,9 +80,7 @@
                         @{
                             if (Context.Session.GetString("ESTADO") == "ATIVO")
                             {
-                                <button type="button" class="btn btn-warning nav-link text-dark" data-bs-toggle="popover" title="Logout" data-bs-content="Logout">
-                                    <a class="nav-link text-dark" id="logout-button" asp-area="" asp-controller="Logout" asp-action="Index">Logout</a>
-                                </button>
+                                <a class="btn btn-warning nav-link text-dark" id="logout-button" asp-area="" asp-controller="Logout" asp-action="Index" data-bs-toggle="popover" title="Logout" data-bs-content="Logout">Logout</a>
                             }
                         }
                     </div>
@@ -91,9 +89,7 @@
                         {
                         <div style="padding-left: 0px;" >
                        
-                        <button type="button" class="btn btn-primary nav-link text-dark" data-bs-toggle="popover" title="Organização do Quiz" data-bs-content="Organização">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Organizacao" asp-action="Index">Organização</a>
-                        </button>
+                        <a class="btn btn-primary nav-link text-dark" asp-area="" asp-controller="Organizacao" asp-action="Index" data-bs-toggle="popover" title="Organização do Quiz" data-bs-content="Organização">Organização</a>
                         </div>
                         }
                 }
