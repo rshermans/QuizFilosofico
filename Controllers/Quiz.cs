@@ -81,12 +81,16 @@ public class Quiz : Controller
         // ⚡ Bolt: Ordenar aleatoriamente no banco de dados para evitar carregar todos os registros na memória
         ViewBag.PerguntaX = _context.Perguntas
                 .Where(n => n.Nivel == nivel && n.QuizzId == tema)
+                // ⚡ Bolt: Removido .AsEnumerable() para evitar materialização massiva no lado do cliente (N+1 query problem)
+                // Usando OrderBy com Guid.NewGuid() para ordenação aleatória no próprio banco de dados
                 .OrderBy(p => Guid.NewGuid()) // Ordena as perguntas por um número aleatório no lado do banco de dados
                 .Take(3) // Pega as 3 primeiras perguntas da sequência ordenada
                 .ToList();
         // Este Bag leva os itens das perguntas para a view
         // ⚡ Bolt: Ordenar aleatoriamente no banco de dados para evitar carregar todos os registros na memória
         ViewBag.ItemDaPergunta = _context.ItemDaPerguntas
+            // ⚡ Bolt: Removido .AsEnumerable() para evitar materialização massiva no lado do cliente
+            // Usando OrderBy com Guid.NewGuid() para ordenação aleatória no próprio banco de dados
             .OrderBy(p => Guid.NewGuid())// Ordena os itens da Pergunta por um número aleatório no lado do banco de dados
             .ToList();
             // Armazenar o valor de tema na variável de sessão
