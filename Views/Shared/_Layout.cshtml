@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -80,9 +80,7 @@
                         @{
                             if (Context.Session.GetString("ESTADO") == "ATIVO")
                             {
-                                <button type="button" class="btn btn-warning nav-link text-dark" data-bs-toggle="popover" title="Logout" data-bs-content="Logout">
-                                    <a class="nav-link text-dark" id="logout-button" asp-area="" asp-controller="Logout" asp-action="Index">Logout</a>
-                                </button>
+                                <a class="btn btn-warning nav-link text-dark" id="logout-button" asp-area="" asp-controller="Logout" asp-action="Index" data-bs-toggle="popover" title="Logout" data-bs-content="Logout">Logout</a>
                             }
                         }
                     </div>
@@ -91,9 +89,7 @@
                         {
                         <div style="padding-left: 0px;" >
                        
-                        <button type="button" class="btn btn-primary nav-link text-dark" data-bs-toggle="popover" title="Organização do Quiz" data-bs-content="Organização">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Organizacao" asp-action="Index">Organização</a>
-                        </button>
+                        <a class="btn btn-primary nav-link text-dark" asp-area="" asp-controller="Organizacao" asp-action="Index" data-bs-toggle="popover" title="Organização do Quiz" data-bs-content="Organização">Organização</a>
                         </div>
                         }
                 }
@@ -113,28 +109,28 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 
-<footer style=“font-size: 8px;background-color: gray; color: white; text-align: center; padding: 8px;”>
+<footer style="font-size: 8px; background-color: gray; color: white; text-align: center; padding: 8px;">
     <center>
-        <p style=“font-size: 8px;animation: blink 1s infinite; background-color: gray; color: white; text-align: center; padding: 8px;””>Quiz Filosófico © 2023. Todos os direitos reservados.</p>
-        <p sstyle="font-size: 8px;">Rômulo Sherman <i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i>rshermans@sapo.pt</p>
+        <p style="font-size: 8px; animation: blink 1s infinite; background-color: gray; color: white; text-align: center; padding: 8px;">Quiz Filosófico © 2023. Todos os direitos reservados.</p>
+        <p style="font-size: 8px;">Rômulo Sherman <i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i>rshermans@sapo.pt</p>
 
-        <a href="http:\\www.facebook.com" target="_blank" class="w3-hover-text-green"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-        <a href="http:\\www.instagram.com" target="_blank" class="w3-hover-text-green">
+        <a href="https://www.facebook.com" target="_blank" aria-label="Facebook" class="w3-hover-text-green"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram" class="w3-hover-text-green">
             <i class="fa fa-instagram w3-hover-opacity"></i>
         </a>
-        <a href="http:\\www.snapchat.com" target="_blank" class="w3-hover-text-green">
+        <a href="https://www.snapchat.com" target="_blank" aria-label="Snapchat" class="w3-hover-text-green">
             <i class="fa fa-snapchat w3-hover-opacity"></i>
         </a>
-            <a href="http:\\www.pinterest.com" target="_blank" class="w3-hover-text-green">
+            <a href="https://www.pinterest.com" target="_blank" aria-label="Pinterest" class="w3-hover-text-green">
             <i class="fa fa-pinterest-p w3-hover-opacity"></i>
         </a>
-                <a href="http:\\www.twitter.com" target="_blank" class="w3-hover-text-green">
+                <a href="https://www.twitter.com" target="_blank" aria-label="Twitter" class="w3-hover-text-green">
             <i class="fa fa-twitter w3-hover-opacity"></i>
         </a>
-                    <a href="http:\\www.linkedin.com" target="_blank" class="w3-hover-text-green">
+                    <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn" class="w3-hover-text-green">
             <i class="fa fa-linkedin w3-hover-opacity"></i>
         </a>
-        <p class="w3-medium">Realização <a href="htpp:\\www.quizzeseducacao.com" target="_blank" class="w3-hover-text-green">quizzedu.com</a>
+        <p class="w3-medium">Realização <a href="https://www.quizzeseducacao.com" target="_blank" class="w3-hover-text-green">quizzedu.com</a>
     </center>
 </footer>
 </html>

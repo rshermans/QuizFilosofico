@@ -1,0 +1,3 @@
+## 2024-05-18 - Improve social media icons accessibility and correct document language
+**Learning:** Found social media icons in the footer were using font-awesome without appropriate ARIA labels, rendering them silent or confusing for screen reader users. Also observed the main document `lang` attribute was incorrectly set to `en` rather than `pt`, breaking pronunciation rules for screen readers in Portuguese.
+**Action:** Applied missing `aria-label` to all icon-only anchor tags in `Views/Shared/_Layout.cshtml`. Corrected `lang` attribute to `pt`. Additionally, repaired malformed URLs (e.g., `http:\\` to `https://`).
