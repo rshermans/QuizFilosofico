@@ -1,0 +1,3 @@
+## 2024-05-18 - Nested Interactive Elements Break Accessibility
+**Learning:** Found a common pattern in this application where `<a>` tags are nested inside `<button>` tags for styling purposes (e.g., `<button class="btn..."><a href="...">...</a></button>`). This breaks keyboard navigation, violates HTML validity, and confuses screen readers, as nested interactive elements are not permitted.
+**Action:** When styling links as buttons in Razor Pages, apply the button CSS classes directly to the `<a>` tag (e.g., `<a class="btn btn-primary" ...>`) and remove the wrapping `<button>` element entirely to ensure smooth keyboard accessibility and valid HTML structure.
