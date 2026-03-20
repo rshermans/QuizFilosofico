@@ -140,8 +140,8 @@ namespace QuizFilosofico.Controllers
         //
         public List<Pergunta> PegarPalavrasNasPerguntas(int count)
         {
-             var random = new Random();
-                return _context.Perguntas.OrderBy(p => random.Next()).Take(count).ToList();
+                // ⚡ Bolt: Ordenar aleatoriamente no banco de dados para evitar carregar todos os registros na memória
+                return _context.Perguntas.OrderBy(p => Guid.NewGuid()).Take(count).ToList();
             
         }
 
