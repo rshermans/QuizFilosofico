@@ -1,3 +1,3 @@
-## 2024-05-24 - Entity Framework Core Random Ordering Memory Bottleneck
-**Learning:** Using `.AsEnumerable().OrderBy(x => random.Next())` inside Entity Framework queries causes client-side materialization of the entire table/dataset before applying the sort and limit locally. This creates a massive memory overhead and database performance bottleneck because the query brings all rows into the application's memory just to pick a few random ones.
-**Action:** Always use database-side random sorting via `Guid.NewGuid()` (e.g., `.OrderBy(p => Guid.NewGuid()).Take(n)`) when working with EF Core to ensure sorting and limiting happens within the SQL database engine.
+## 2024-05-24 - Entity Framework Core: Database-Side Random Sorting vs Client-Side
+**Learning:** Using `OrderBy(x => random.Next())` on an Entity Framework `IQueryable` often forces client-side evaluation, materializing the entire dataset into memory before sorting. This creates a massive performance and memory bottleneck, especially for large tables.
+**Action:** Always use `OrderBy(p => Guid.NewGuid())` when needing random rows directly from the database with EF Core. This translates to `ORDER BY NEWID()` in SQL Server (or `RANDOM()` in SQLite), properly delegating the work to the database engine.

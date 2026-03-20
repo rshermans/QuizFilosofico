@@ -82,13 +82,13 @@ public class Quiz : Controller
         // Uses Guid.NewGuid() for database-side random sorting, preventing massive memory overhead.
         ViewBag.PerguntaX = _context.Perguntas
                 .Where(n => n.Nivel == nivel && n.QuizzId == tema)
-                .OrderBy(p => Guid.NewGuid()) // Ordena as perguntas no lado do banco de dados
+                .OrderBy(p => Guid.NewGuid()) // Ordena as perguntas por um número aleatório no lado do banco de dados (melhora de performance)
                 .Take(3) // Pega as 3 primeiras perguntas da sequência ordenada
                 .ToList();
         // Este Bag leva os itens das perguntas para a view
         // ⚡ Bolt Optimization: Removed .AsEnumerable() to prevent client-side materialization.
         ViewBag.ItemDaPergunta = _context.ItemDaPerguntas
-            .OrderBy(p => Guid.NewGuid())// Ordena os itens da Pergunta no lado do banco de dados
+            .OrderBy(p => Guid.NewGuid())// Ordena os itens da Pergunta por um número aleatório no lado do banco de dados (melhora de performance)
             .ToList();
             // Armazenar o valor de tema na variável de sessão
             // Inserção do ?? para previnir em caso de tema = null, inserir o default 0 

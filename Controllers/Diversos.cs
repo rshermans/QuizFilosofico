@@ -140,8 +140,6 @@ namespace QuizFilosofico.Controllers
         //
         public List<Pergunta> PegarPalavrasNasPerguntas(int count)
         {
-             // ⚡ Bolt Optimization: Removed client-side materialization orderby for random.Next().
-             // Uses Guid.NewGuid() for database-side random sorting, preventing massive memory overhead.
                 return _context.Perguntas.OrderBy(p => Guid.NewGuid()).Take(count).ToList();
             
         }
