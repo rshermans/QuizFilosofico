@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using QuizFilosofico.Data;
 using QuizFilosofico.Models;
 
@@ -35,6 +35,7 @@ namespace QuizFilosofico.Controllers
 
             if (!string.IsNullOrEmpty(HttpContext.Session.GetString("JOGADOR")))
             {
+                // Redirecionar para uma página informando que o jogador já está logado
                 return Redirect("~/Login/Jalogado");
             }
 

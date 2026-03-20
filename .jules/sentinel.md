@@ -1,4 +1,4 @@
-## 2023-10-27 - Added CSRF Protection to Login
-**Vulnerability:** The login form lacked Cross-Site Request Forgery (CSRF) protection.
-**Learning:** ASP.NET Core MVC requires explicit `[ValidateAntiForgeryToken]` attribute on POST actions and `@Html.AntiForgeryToken()` in the corresponding view form.
-**Prevention:** Always ensure forms that mutate state or authenticate users include CSRF tokens and the corresponding validation attribute on the controller action.
+## 2023-10-27 - [Missing POST and CSRF Protection on Login Endpoint]
+**Vulnerability:** The login endpoint `Index` in `LoginController.cs` was missing `[HttpPost]` and `[ValidateAntiForgeryToken]` decorators. This allowed authentication via GET requests (exposing credentials in URLs/logs) and made the application vulnerable to Cross-Site Request Forgery (CSRF).
+**Learning:** The application had a single `Index` method handling both GET (rendering the view) and POST (handling the login submission), which is an insecure pattern. ASP.NET Core MVC requires explicit routing decorators (`[HttpGet]`, `[HttpPost]`) to prevent unintended request methods.
+**Prevention:** Always separate GET and POST actions into distinct methods, use explicit decorators, and apply `[ValidateAntiForgeryToken]` to all state-changing endpoints (especially authentication).
